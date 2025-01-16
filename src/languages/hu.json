@@ -1,0 +1,51 @@
+{
+    "header": {
+        "logo_alt": "BeyondStart Megoldások Logója",
+        "menu": {
+            "about": "Rólunk",
+            "services": "Szolgáltatások",
+            "portfolio": "Portfólió",
+            "contact": "Kapcsolat"
+        }
+    },
+    "hero": {
+        "welcome": "Üdvözöljük a BeyondStart Megoldásoknál",
+        "description": "Innovatív megoldások egy jobb jövőért",
+        "button": "Kezdje el"
+    },
+    "sections": {
+        "about": {
+            "title": "Rólunk",
+            "description": "A BeyondStart Megoldásoknál elkötelezettek vagyunk, hogy korszerű megoldásokat nyújtsunk, amelyek segítenek a vállalkozásoknak fejlődni a digitális korszakban."
+        },
+        "services": {
+            "title": "Szolgáltatásaink",
+            "items": ["Szolgáltatás 1", "Szolgáltatás 2", "Szolgáltatás 3"]
+        },
+        "portfolio": {
+            "title": "Portfóliónk",
+            "items": ["Projekt 1", "Projekt 2", "Projekt 3"]
+        },
+        "contact": {
+            "title": "Kapcsolat",
+            "name": "Név",
+            "company": "Cégnév",
+            "phone": "Telefon",
+            "email": "Email",
+            "message": "Üzenet",
+            "button": "Üzenet küldése"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 BeyondStart Megoldások. Minden jog fenntartva."
+    },
+    "email": {
+        "contact_email_title": "Kapcsolatfelvétel",
+        "contact_email_name": "Teljes név",
+        "contact_email_company": "Cégnév",
+        "contact_email_country_code": "Országkód",
+        "contact_email_phone": "Telefon",
+        "contact_email_email": "Email",
+        "contact_email_message": "Üzenet"
+    }
+}

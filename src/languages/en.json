@@ -1,0 +1,51 @@
+{
+    "header": {
+        "logo_alt": "BeyondStart Solutions Logo",
+        "menu": {
+            "about": "About Us",
+            "services": "Services",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
+        }
+    },
+    "hero": {
+        "welcome": "Welcome to BeyondStart Solutions",
+        "description": "Innovative Solutions for a Better Tomorrow",
+        "button": "Get Started"
+    },
+    "sections": {
+        "about": {
+            "title": "About Us",
+            "description": "At BeyondStart Solutions, we are committed to delivering cutting-edge solutions that help businesses thrive in a digital era."
+        },
+        "services": {
+            "title": "Our Services",
+            "items": ["Service 1", "Service 2", "Service 3"]
+        },
+        "portfolio": {
+            "title": "Our Portfolio",
+            "items": ["Project 1", "Project 2", "Project 3"]
+        },
+        "contact": {
+            "title": "Contact Us",
+            "name": "Name",
+            "company": "Company",
+            "phone": "Phone",
+            "email": "Email",
+            "message": "Message",
+            "button": "Send Message"
+        }
+    },
+    "footer": {
+        "copyright": "© 2025 BeyondStart Solutions. All rights reserved."
+    },
+    "email": {
+        "contact_email_title": "Contact Form Submission",
+        "contact_email_name": "Full name",
+        "contact_email_company": "Company",
+        "contact_email_country_code": "Country code",
+        "contact_email_phone": "Phone",
+        "contact_email_email": "Email",
+        "contact_email_message": "Message"
+    }
+}

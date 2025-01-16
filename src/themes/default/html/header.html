@@ -1,0 +1,19 @@
+<img src="themes/<?php print $config['theme']; ?>/images/logos/only-logo-trasparent.png" alt="<?php echo $config['translations']['header']['logo_alt']; ?>">
+        <nav>
+            <a href="#about"><?php echo $config['translations']['header']['menu']['about']; ?></a>
+            <a href="#services"><?php echo $config['translations']['header']['menu']['services']; ?></a>
+            <a href="#portfolio"><?php echo $config['translations']['header']['menu']['portfolio']; ?></a>
+            <a href="#contact"><?php echo $config['translations']['header']['menu']['contact']; ?></a>
+        </nav>
+        <div class="language-selector">
+            <div class="dropdown">
+                <span>
+                    <img src="themes/<?php print $config['theme']; ?>/images/icons/<?php echo $config['siteLanguage'] === 'en' ? 'us' : 'hu'; ?>.svg" alt="Flag">
+                    <?php echo $config['siteLanguage'] === 'en' ? 'English' : 'Magyar'; ?>
+                </span>
+                <div class="dropdown-content">
+                    <a href="?lang=en"><img src="themes/<?php print $config['theme']; ?>/images/icons/us.svg" alt="English"> English</a>
+                    <a href="?lang=hu"><img src="themes/<?php print $config['theme']; ?>/images/icons/hu.svg" alt="Magyar"> Magyar</a>
+                </div>
+            </div>
+        </div>
