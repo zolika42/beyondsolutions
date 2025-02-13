@@ -5,31 +5,42 @@
 </div>
 
 <section id="about">
-    <h2><?php echo $config['translations']['sections']['about']['title']; ?></h2>
-    <p><?php echo $config['translations']['sections']['about']['description']; ?></p>
+    <h2><?php echo $config['translations']['about']['title']; ?></h2>
+    <div class="about-content">
+        <p class="slogan"><?php echo $config['translations']['about']['slogan']; ?></p>
+        <p><?php echo $config['translations']['about']['details']; ?></p>
+        <p><?php echo $config['translations']['about']['values']; ?></p>
+    </div>
 </section>
 
 <section id="services">
-    <h2><?php echo $config['translations']['sections']['services']['title']; ?></h2>
+    <h2><?php echo $config['translations']['header']['menu']['services']; ?></h2>
     <div class="services">
-        <?php foreach ($config['translations']['sections']['services']['items'] as $service) { ?>
-            <div class="service-item">
-                <h3><?php echo $service; ?></h3>
-            </div>
+        <?php foreach ($config['translations']['services'] as $service_key => $service) { ?>
+        <div class="service-item">
+            <img src="../images/icons/<?php echo $service_key; ?>.png" alt="<?php echo $service['title']; ?> Icon">
+            <h3><?php echo $service['title']; ?></h3>
+            <p><?php echo $service['description']; ?></p>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"><?php echo $service['button']; ?></button>
+        </div>
         <?php } ?>
     </div>
 </section>
 
-<section id="portfolio">
-    <h2><?php echo $config['translations']['sections']['portfolio']['title']; ?></h2>
-    <div class="portfolio">
-        <?php foreach ($config['translations']['sections']['portfolio']['items'] as $project) { ?>
-            <div class="portfolio-item">
-                <h3><?php echo $project; ?></h3>
-            </div>
+<section id="clients" class="partners-section">
+    <h2><?php echo $config['translations']['clients']['title']; ?></h2>
+    <div class="partners-container">
+        <?php foreach ($config['translations']['clients']['partners'] as $partner) { ?>
+        <div class="partner">
+            <a href="<?php echo $partner['url']; ?>" target="_blank">
+                <img src="../images/logos/<?php echo $partner['key']; ?>_logo.png" alt="<?php echo $partner['name']; ?> Logo">
+                <p><strong><?php echo $partner['name']; ?></strong>: <?php echo $partner['description']; ?></p>
+            </a>
+        </div>
         <?php } ?>
     </div>
 </section>
+
 
 <section id="contact">
     <h2><?php echo $config['translations']['sections']['contact']['title']; ?></h2>
@@ -40,233 +51,278 @@
         <div class="phone-container">
             <!-- Dropdown for country selection with flag and country code -->
             <select id="countryCode" name="countryCode">
-                <option value="+93" data-flag="af">🇦🇫 Afghanistan (+93)</option>
-                <option value="+355" data-flag="al">🇦🇱 Albania (+355)</option>
-                <option value="+213" data-flag="dz">🇩🇿 Algeria (+213)</option>
-                <option value="+1684" data-flag="as">🇦🇸 American Samoa (+1684)</option>
-                <option value="+376" data-flag="ad">🇦🇩 Andorra (+376)</option>
-                <option value="+244" data-flag="ao">🇦🇴 Angola (+244)</option>
-                <option value="+1264" data-flag="ai">🇦🇮 Anguilla (+1264)</option>
-                <option value="+1268" data-flag="ag">🇦🇬 Antigua and Barbuda (+1268)</option>
-                <option value="+54" data-flag="ar">🇦🇷 Argentina (+54)</option>
-                <option value="+374" data-flag="am">🇦🇲 Armenia (+374)</option>
-                <option value="+297" data-flag="aw">🇦🇼 Aruba (+297)</option>
-                <option value="+61" data-flag="au">🇦🇺 Australia (+61)</option>
-                <option value="+43" data-flag="at">🇦🇹 Austria (+43)</option>
-                <option value="+994" data-flag="az">🇦🇿 Azerbaijan (+994)</option>
-                <option value="+1242" data-flag="bs">🇧🇸 Bahamas (+1242)</option>
-                <option value="+973" data-flag="bh">🇧🇭 Bahrain (+973)</option>
-                <option value="+880" data-flag="bd">🇧🇩 Bangladesh (+880)</option>
-                <option value="+1246" data-flag="bb">🇧🇧 Barbados (+1246)</option>
-                <option value="+375" data-flag="by">🇧🇾 Belarus (+375)</option>
-                <option value="+32" data-flag="be">🇧🇪 Belgium (+32)</option>
-                <option value="+501" data-flag="bz">🇧🇿 Belize (+501)</option>
-                <option value="+229" data-flag="bj">🇧🇯 Benin (+229)</option>
-                <option value="+975" data-flag="bt">🇧🇹 Bhutan (+975)</option>
-                <option value="+591" data-flag="bo">🇧🇴 Bolivia (+591)</option>
-                <option value="+387" data-flag="ba">🇧🇦 Bosnia and Herzegovina (+387)</option>
-                <option value="+267" data-flag="bw">🇧🇼 Botswana (+267)</option>
-                <option value="+55" data-flag="br">🇧🇷 Brazil (+55)</option>
-                <option value="+673" data-flag="bn">🇧🇳 Brunei (+673)</option>
-                <option value="+359" data-flag="bg">🇧🇬 Bulgaria (+359)</option>
-                <option value="+226" data-flag="bf">🇧🇫 Burkina Faso (+226)</option>
-                <option value="+257" data-flag="bi">🇧🇮 Burundi (+257)</option>
-                <option value="+855" data-flag="kh">🇰🇭 Cambodia (+855)</option>
-                <option value="+237" data-flag="cm">🇨🇲 Cameroon (+237)</option>
-                <option value="+1" data-flag="ca">🇨🇦 Canada (+1)</option>
-                <option value="+238" data-flag="cv">🇨🇻 Cape Verde (+238)</option>
-                <option value="+1345" data-flag="ky">🇰🇾 Cayman Islands (+1345)</option>
-                <option value="+236" data-flag="cf">🇨🇫 Central African Republic (+236)</option>
-                <option value="+56" data-flag="cl">🇨🇱 Chile (+56)</option>
-                <option value="+86" data-flag="cn">🇨🇳 China (+86)</option>
-                <option value="+61" data-flag="cx">🇨🇽 Christmas Island (+61)</option>
-                <option value="+57" data-flag="co">🇨🇴 Colombia (+57)</option>
-                <option value="+269" data-flag="km">🇰🇲 Comoros (+269)</option>
-                <option value="+242" data-flag="cg">🇨🇬 Congo (+242)</option>
-                <option value="+243" data-flag="cd">🇨🇩 Congo (Democratic Republic) (+243)</option>
-                <option value="+682" data-flag="ck">🇨🇰 Cook Islands (+682)</option>
-                <option value="+506" data-flag="cr">🇨🇷 Costa Rica (+506)</option>
-                <option value="+225" data-flag="ci">🇨🇮 Côte d'Ivoire (+225)</option>
-                <option value="+385" data-flag="hr">🇭🇷 Croatia (+385)</option>
-                <option value="+53" data-flag="cu">🇨🇺 Cuba (+53)</option>
-                <option value="+357" data-flag="cy">🇨🇾 Cyprus (+357)</option>
-                <option value="+420" data-flag="cz">🇨🇿 Czech Republic (+420)</option>
-                <option value="+45" data-flag="dk">🇩🇰 Denmark (+45)</option>
-                <option value="+253" data-flag="dj">🇩🇯 Djibouti (+253)</option>
-                <option value="+1" data-flag="dm">🇩🇲 Dominica (+1)</option>
-                <option value="+1" data-flag="do">🇩🇴 Dominican Republic (+1)</option>
-                <option value="+593" data-flag="ec">🇪🇨 Ecuador (+593)</option>
-                <option value="+20" data-flag="eg">🇪🇬 Egypt (+20)</option>
-                <option value="+503" data-flag="sv">🇸🇻 El Salvador (+503)</option>
-                <option value="+240" data-flag="gq">🇬🇶 Equatorial Guinea (+240)</option>
-                <option value="+291" data-flag="er">🇪🇷 Eritrea (+291)</option>
-                <option value="+372" data-flag="ee">🇪🇪 Estonia (+372)</option>
-                <option value="+251" data-flag="et">🇪🇹 Ethiopia (+251)</option>
-                <option value="+500" data-flag="fk">🇫🇰 Falkland Islands (+500)</option>
-                <option value="+298" data-flag="fo">🇫🇴 Faroe Islands (+298)</option>
-                <option value="+679" data-flag="fj">🇫🇯 Fiji (+679)</option>
-                <option value="+358" data-flag="fi">🇫🇮 Finland (+358)</option>
-                <option value="+33" data-flag="fr">🇫🇷 France (+33)</option>
-                <option value="+594" data-flag="gf">🇬🇫 French Guiana (+594)</option>
-                <option value="+689" data-flag="pf">🇵🇫 French Polynesia (+689)</option>
-                <option value="+241" data-flag="ga">🇬🇦 Gabon (+241)</option>
-                <option value="+220" data-flag="gm">🇬🇲 Gambia (+220)</option>
-                <option value="+995" data-flag="ge">🇬🇪 Georgia (+995)</option>
-                <option value="+49" data-flag="de">🇩🇪 Germany (+49)</option>
-                <option value="+233" data-flag="gh">🇬🇭 Ghana (+233)</option>
-                <option value="+350" data-flag="gi">🇬🇮 Gibraltar (+350)</option>
-                <option value="+30" data-flag="gr">🇬🇷 Greece (+30)</option>
-                <option value="+299" data-flag="gl">🇬🇱 Greenland (+299)</option>
-                <option value="+1" data-flag="gd">🇬🇩 Grenada (+1)</option>
-                <option value="+502" data-flag="gt">🇬🇹 Guatemala (+502)</option>
-                <option value="+224" data-flag="gn">🇬🇳 Guinea (+224)</option>
-                <option value="+245" data-flag="gw">🇬🇼 Guinea-Bissau (+245)</option>
-                <option value="+595" data-flag="py">🇵🇾 Paraguay (+595)</option>
-                <option value="+509" data-flag="ht">🇭🇹 Haiti (+509)</option>
-                <option value="+504" data-flag="hn">🇭🇳 Honduras (+504)</option>
-                <option value="+852" data-flag="hk">🇭🇰 Hong Kong (+852)</option>
-                <option value="+36" data-flag="hu" selected>🇭🇺 Hungary (+36)</option>
-                <option value="+354" data-flag="is">🇮🇸 Iceland (+354)</option>
-                <option value="+91" data-flag="in">🇮🇳 India (+91)</option>
-                <option value="+62" data-flag="id">🇮🇩 Indonesia (+62)</option>
-                <option value="+1" data-flag="ir">🇮🇷 Iran (+1)</option>
-                <option value="+964" data-flag="iq">🇮🇶 Iraq (+964)</option>
-                <option value="+353" data-flag="ie">🇮🇪 Ireland (+353)</option>
-                <option value="+972" data-flag="il">🇮🇱 Israel (+972)</option>
-                <option value="+39" data-flag="it">🇮🇹 Italy (+39)</option>
-                <option value="+1" data-flag="jm">🇯🇲 Jamaica (+1)</option>
-                <option value="+81" data-flag="jp">🇯🇵 Japan (+81)</option>
-                <option value="+962" data-flag="jo">🇯🇴 Jordan (+962)</option>
-                <option value="+7" data-flag="kz">🇰🇿 Kazakhstan (+7)</option>
-                <option value="+254" data-flag="ke">🇰🇪 Kenya (+254)</option>
-                <option value="+686" data-flag="ki">🇰🇮 Kiribati (+686)</option>
-                <option value="+850" data-flag="kp">🇰🇵 North Korea (+850)</option>
-                <option value="+82" data-flag="kr">🇰🇷 South Korea (+82)</option>
-                <option value="+965" data-flag="kw">🇰🇼 Kuwait (+965)</option>
-                <option value="+996" data-flag="kg">🇰🇬 Kyrgyzstan (+996)</option>
-                <option value="+856" data-flag="la">🇱🇦 Laos (+856)</option>
-                <option value="+371" data-flag="lv">🇱🇻 Latvia (+371)</option>
-                <option value="+961" data-flag="lb">🇱🇧 Lebanon (+961)</option>
-                <option value="+266" data-flag="ls">🇱🇸 Lesotho (+266)</option>
-                <option value="+231" data-flag="lr">🇱🇷 Liberia (+231)</option>
-                <option value="+218" data-flag="ly">🇱🇾 Libya (+218)</option>
-                <option value="+423" data-flag="li">🇱🇮 Liechtenstein (+423)</option>
-                <option value="+370" data-flag="lt">🇱🇹 Lithuania (+370)</option>
-                <option value="+352" data-flag="lu">🇱🇺 Luxembourg (+352)</option>
-                <option value="+853" data-flag="mo">🇲🇴 Macau (+853)</option>
-                <option value="+389" data-flag="mk">🇲🇰 North Macedonia (+389)</option>
-                <option value="+261" data-flag="mg">🇲🇬 Madagascar (+261)</option>
-                <option value="+265" data-flag="mw">🇲🇼 Malawi (+265)</option>
-                <option value="+60" data-flag="my">🇲🇾 Malaysia (+60)</option>
-                <option value="+960" data-flag="mv">🇲🇻 Maldives (+960)</option>
-                <option value="+223" data-flag="ml">🇲🇱 Mali (+223)</option>
-                <option value="+356" data-flag="mt">🇲🇹 Malta (+356)</option>
-                <option value="+692" data-flag="mh">🇲🇭 Marshall Islands (+692)</option>
-                <option value="+596" data-flag="mq">🇲🇶 Martinique (+596)</option>
-                <option value="+222" data-flag="mr">🇲🇷 Mauritania (+222)</option>
-                <option value="+230" data-flag="mu">🇲🇺 Mauritius (+230)</option>
-                <option value="+262" data-flag="yt">🇾🇹 Mayotte (+262)</option>
-                <option value="+52" data-flag="mx">🇲🇽 Mexico (+52)</option>
-                <option value="+691" data-flag="fm">🇫🇲 Micronesia (+691)</option>
-                <option value="+373" data-flag="md">🇲🇩 Moldova (+373)</option>
-                <option value="+377" data-flag="mc">🇲🇨 Monaco (+377)</option>
-                <option value="+976" data-flag="mn">🇲🇳 Mongolia (+976)</option>
-                <option value="+382" data-flag="me">🇲🇪 Montenegro (+382)</option>
-                <option value="+1664" data-flag="ms">🇲🇸 Montserrat (+1664)</option>
-                <option value="+212" data-flag="ma">🇲🇦 Morocco (+212)</option>
-                <option value="+258" data-flag="mz">🇲🇿 Mozambique (+258)</option>
-                <option value="+95" data-flag="mm">🇲🇲 Myanmar (+95)</option>
-                <option value="+264" data-flag="na">🇳🇦 Namibia (+264)</option>
-                <option value="+674" data-flag="nr">🇳🇷 Nauru (+674)</option>
-                <option value="+977" data-flag="np">🇳🇵 Nepal (+977)</option>
-                <option value="+31" data-flag="nl">🇳🇱 Netherlands (+31)</option>
-                <option value="+64" data-flag="nz">🇳🇿 New Zealand (+64)</option>
-                <option value="+505" data-flag="ni">🇳🇮 Nicaragua (+505)</option>
-                <option value="+227" data-flag="ne">🇳🇪 Niger (+227)</option>
-                <option value="+234" data-flag="ng">🇳🇬 Nigeria (+234)</option>
-                <option value="+683" data-flag="nu">🇳🇺 Niue (+683)</option>
-                <option value="+672" data-flag="nf">🇳🇫 Norfolk Island (+672)</option>
-                <option value="+670" data-flag="mp">🇲🇵 Northern Mariana Islands (+670)</option>
-                <option value="+47" data-flag="no">🇳🇴 Norway (+47)</option>
-                <option value="+968" data-flag="om">🇴🇲 Oman (+968)</option>
-                <option value="+92" data-flag="pk">🇵🇰 Pakistan (+92)</option>
-                <option value="+680" data-flag="pw">🇵🇼 Palau (+680)</option>
-                <option value="+970" data-flag="ps">🇵🇸 Palestine (+970)</option>
-                <option value="+507" data-flag="pa">🇵🇦 Panama (+507)</option>
-                <option value="+675" data-flag="pg">🇵🇬 Papua New Guinea (+675)</option>
-                <option value="+595" data-flag="py">🇵🇾 Paraguay (+595)</option>
-                <option value="+51" data-flag="pe">🇵🇪 Peru (+51)</option>
-                <option value="+63" data-flag="ph">🇵🇭 Philippines (+63)</option>
-                <option value="+48" data-flag="pl">🇵🇱 Poland (+48)</option>
-                <option value="+351" data-flag="pt">🇵🇹 Portugal (+351)</option>
-                <option value="+1" data-flag="pr">🇵🇷 Puerto Rico (+1)</option>
-                <option value="+974" data-flag="qa">🇶🇦 Qatar (+974)</option>
-                <option value="+262" data-flag="re">🇷🇪 Réunion (+262)</option>
-                <option value="+40" data-flag="ro">🇷🇴 Romania (+40)</option>
-                <option value="+7" data-flag="ru">🇷🇺 Russia (+7)</option>
-                <option value="+250" data-flag="rw">🇷🇼 Rwanda (+250)</option>
-                <option value="+590" data-flag="bl">🇧🇱 Saint Barthélemy (+590)</option>
-                <option value="+290" data-flag="sh">🇸🇭 Saint Helena (+290)</option>
-                <option value="+1" data-flag="kn">🇰🇳 Saint Kitts and Nevis (+1)</option>
-                <option value="+1" data-flag="lc">🇱🇨 Saint Lucia (+1)</option>
-                <option value="+590" data-flag="mf">🇲🇫 Saint Martin (+590)</option>
-                <option value="+508" data-flag="pm">🇵🇲 Saint Pierre and Miquelon (+508)</option>
-                <option value="+1" data-flag="vc">🇻🇨 Saint Vincent and the Grenadines (+1)</option>
-                <option value="+684" data-flag="ws">🇼🇸 Samoa (+684)</option>
-                <option value="+378" data-flag="sm">🇸🇲 San Marino (+378)</option>
-                <option value="+239" data-flag="st">🇸🇹 São Tomé and Príncipe (+239)</option>
-                <option value="+966" data-flag="sa">🇸🇦 Saudi Arabia (+966)</option>
-                <option value="+221" data-flag="sn">🇸🇳 Senegal (+221)</option>
-                <option value="+381" data-flag="rs">🇷🇸 Serbia (+381)</option>
-                <option value="+248" data-flag="sc">🇸🇨 Seychelles (+248)</option>
-                <option value="+232" data-flag="sl">🇸🇱 Sierra Leone (+232)</option>
-                <option value="+65" data-flag="sg">🇸🇬 Singapore (+65)</option>
-                <option value="+1" data-flag="sx">🇸🇽 Sint Maarten (+1)</option>
-                <option value="+421" data-flag="sk">🇸🇰 Slovakia (+421)</option>
-                <option value="+386" data-flag="si">🇸🇮 Slovenia (+386)</option>
-                <option value="+677" data-flag="sb">🇸🇧 Solomon Islands (+677)</option>
-                <option value="+252" data-flag="so">🇸🇴 Somalia (+252)</option>
-                <option value="+27" data-flag="za">🇿🇦 South Africa (+27)</option>
-                <option value="+82" data-flag="kr">🇰🇷 South Korea (+82)</option>
-                <option value="+34" data-flag="es">🇪🇸 Spain (+34)</option>
-                <option value="+94" data-flag="lk">🇱🇰 Sri Lanka (+94)</option>
-                <option value="+249" data-flag="sd">🇸🇩 Sudan (+249)</option>
-                <option value="+597" data-flag="sr">🇸🇷 Suriname (+597)</option>
-                <option value="+47" data-flag="no">🇳🇴 Norway (+47)</option>
-                <option value="+268" data-flag="sz">🇸🇿 Eswatini (+268)</option>
-                <option value="+46" data-flag="se">🇸🇪 Sweden (+46)</option>
-                <option value="+41" data-flag="ch">🇨🇭 Switzerland (+41)</option>
-                <option value="+963" data-flag="sy">🇸🇾 Syria (+963)</option>
-                <option value="+886" data-flag="tw">🇹🇼 Taiwan (+886)</option>
-                <option value="+992" data-flag="tj">🇹🇯 Tajikistan (+992)</option>
-                <option value="+255" data-flag="tz">🇹🇿 Tanzania (+255)</option>
-                <option value="+66" data-flag="th">🇹🇭 Thailand (+66)</option>
-                <option value="+228" data-flag="tg">🇹🇬 Togo (+228)</option>
-                <option value="+690" data-flag="tk">🇹🇰 Tokelau (+690)</option>
-                <option value="+676" data-flag="to">🇹🇴 Tonga (+676)</option>
-                <option value="+1" data-flag="tt">🇹🇹 Trinidad and Tobago (+1)</option>
-                <option value="+216" data-flag="tn">🇹🇳 Tunisia (+216)</option>
-                <option value="+90" data-flag="tr">🇹🇷 Turkey (+90)</option>
-                <option value="+993" data-flag="tm">🇹🇲 Turkmenistan (+993)</option>
-                <option value="+1" data-flag="tc">🇹🇨 Turks and Caicos Islands (+1)</option>
-                <option value="+688" data-flag="tv">🇹🇻 Tuvalu (+688)</option>
-                <option value="+256" data-flag="ug">🇺🇬 Uganda (+256)</option>
-                <option value="+380" data-flag="ua">🇺🇦 Ukraine (+380)</option>
-                <option value="+971" data-flag="ae">🇦🇪 United Arab Emirates (+971)</option>
-                <option value="+44" data-flag="gb">🇬🇧 United Kingdom (+44)</option>
-                <option value="+1" data-flag="us">🇺🇸 United States (+1)</option>
-                <option value="+598" data-flag="uy">🇺🇾 Uruguay (+598)</option>
-                <option value="+998" data-flag="uz">🇺🇿 Uzbekistan (+998)</option>
-                <option value="+678" data-flag="vu">🇻🇺 Vanuatu (+678)</option>
-                <option value="+379" data-flag="va">🇻🇦 Vatican City (+379)</option>
-                <option value="+58" data-flag="ve">🇻🇪 Venezuela (+58)</option>
-                <option value="+84" data-flag="vn">🇻🇳 Vietnam (+84)</option>
-                <option value="+1284" data-flag="vg">🇻🇬 British Virgin Islands (+1284)</option>
-                <option value="+1340" data-flag="vi">🇻🇮 U.S. Virgin Islands (+1340)</option>
-                <option value="+681" data-flag="wf">🇼🇫 Wallis and Futuna (+681)</option>
-                <option value="+967" data-flag="ye">🇾🇪 Yemen (+967)</option>
-                <option value="+260" data-flag="zm">🇿🇲 Zambia (+260)</option>
-                <option value="+263" data-flag="zw">🇿🇼 Zimbabwe (+263)</option>
+                <option data-flag="ab" value="ab (+7)">Abkhazia (+7)</option>
+                <option data-flag="af" value="af (+93)">🇦🇫 Afghanistan (+93)</option>
+                <option data-flag="ål" value="ål (+358)">land (+358)</option>
+                <option data-flag="al" value="al (+355)">🇦🇱 Albania (+355)</option>
+                <option data-flag="al" value="al (+213)">🇩🇿 Algeria (+213)</option>
+                <option data-flag="am" value="am (+1)">🇦🇸 American Samoa (+1)</option>
+                <option data-flag="an" value="an (+376)">🇦🇩 Andorra (+376)</option>
+                <option data-flag="an" value="an (+244)">🇦🇴 Angola (+244)</option>
+                <option data-flag="an" value="an (+1)">🇦🇮 Anguilla (+1)</option>
+                <option data-flag="an" value="an (+1)">🇦🇬 Antigua and Barbuda (+1)</option>
+                <option data-flag="ar" value="ar (+54)">🇦🇷 Argentina (+54)</option>
+                <option data-flag="ar" value="ar (+374)">🇦🇲 Armenia (+374)</option>
+                <option data-flag="ar" value="ar (+297)">🇦🇼 Aruba (+297)</option>
+                <option data-flag="as" value="as (+247)">Ascension (+247)</option>
+                <option data-flag="au" value="au (+61)">🇦🇺 Australia (+61)</option>
+                <option data-flag="au" value="au (+43)">🇦🇹 Austria (+43)</option>
+                <option data-flag="az" value="az (+994)">🇦🇿 Azerbaijan (+994)</option>
+                <option data-flag="ba" value="ba (+1)">🇧🇸 Bahamas (+1)</option>
+                <option data-flag="ba" value="ba (+973)">🇧🇭 Bahrain (+973)</option>
+                <option data-flag="ba" value="ba (+880)">🇧🇩 Bangladesh (+880)</option>
+                <option data-flag="ba" value="ba (+1)">🇧🇧 Barbados (+1)</option>
+                <option data-flag="be" value="be (+375)">🇧🇾 Belarus (+375)</option>
+                <option data-flag="be" value="be (+32)">🇧🇪 Belgium (+32)</option>
+                <option data-flag="be" value="be (+501)">🇧🇿 Belize (+501)</option>
+                <option data-flag="be" value="be (+229)">🇧🇯 Benin (+229)</option>
+                <option data-flag="be" value="be (+1)">Bermuda (+1)</option>
+                <option data-flag="bh" value="bh (+975)">🇧🇹 Bhutan (+975)</option>
+                <option data-flag="bo" value="bo (+591)">🇧🇴 Bolivia (+591)</option>
+                <option data-flag="bo" value="bo (+599)">Bonaire (+599)</option>
+                <option data-flag="bo" value="bo (+387)">🇧🇦 Bosnia and Herzegovina (+387)</option>
+                <option data-flag="bo" value="bo (+267)">🇧🇼 Botswana (+267)</option>
+                <option data-flag="br" value="br (+55)">🇧🇷 Brazil (+55)</option>
+                <option data-flag="br" value="br (+246)">British Indian Ocean Territory (Diego Garcia) (+246)</option>
+                <option data-flag="br" value="br (+1)">British Virgin Islands (+1)</option>
+                <option data-flag="br" value="br (+673)">Brunei Darussalam (+673)</option>
+                <option data-flag="bu" value="bu (+359)">🇧🇬 Bulgaria (+359)</option>
+                <option data-flag="bu" value="bu (+226)">🇧🇫 Burkina Faso (+226)</option>
+                <option data-flag="bu" value="bu (+257)">🇧🇮 Burundi (+257)</option>
+                <option data-flag="ca" value="ca (+238)">Cape Verde (+238)</option>
+                <option data-flag="ca" value="ca (+855)">🇰🇭 Cambodia (+855)</option>
+                <option data-flag="ca" value="ca (+237)">🇨🇲 Cameroon (+237)</option>
+                <option data-flag="ca" value="ca (+1)">🇨🇦 Canada (+1)</option>
+                <option data-flag="ca" value="ca (+599)">Caribbean Netherlands (+599)</option>
+                <option data-flag="ca" value="ca (+1)">Cayman Islands (+1)</option>
+                <option data-flag="ce" value="ce (+236)">🇨🇫 Central African Republic (+236)</option>
+                <option data-flag="ch" value="ch (+235)">🇹🇩 Chad (+235)</option>
+                <option data-flag="ch" value="ch (+56)">🇨🇱 Chile (+56)</option>
+                <option data-flag="ch" value="ch (+86)">🇨🇳 China (+86)</option>
+                <option data-flag="ch" value="ch (+61)">Christmas Island (+61)</option>
+                <option data-flag="co" value="co (+61)">Cocos (Keeling) Islands (+61)</option>
+                <option data-flag="co" value="co (+57)">🇨🇴 Colombia (+57)</option>
+                <option data-flag="co" value="co (+269)">🇰🇲 Comoros (+269)</option>
+                <option data-flag="co" value="co (+242)">Congo (+242)</option>
+                <option data-flag="co" value="co (+243)">Democratic Republic of the (+243)</option>
+                <option data-flag="co" value="co (+682)">🇨🇰 Cook Islands (+682)</option>
+                <option data-flag="co" value="co (+506)">🇨🇷 Costa Rica (+506)</option>
+                <option data-flag="iv" value="iv (+225)">te d'Ivoire) (+225)</option>
+                <option data-flag="cr" value="cr (+385)">🇭🇷 Croatia (+385)</option>
+                <option data-flag="cu" value="cu (+53)">🇨🇺 Cuba (+53)</option>
+                <option data-flag="cu" value="cu (+599)">ao (+599)</option>
+                <option data-flag="cy" value="cy (+357)">🇨🇾 Cyprus (+357)</option>
+                <option data-flag="cz" value="cz (+420)">🇨🇿 Czech Republic (+420)</option>
+                <option data-flag="de" value="de (+45)">🇩🇰 Denmark (+45)</option>
+                <option data-flag="dj" value="dj (+253)">🇩🇯 Djibouti (+253)</option>
+                <option data-flag="do" value="do (+1)">🇩🇲 Dominica (+1)</option>
+                <option data-flag="do" value="do (+1)">🇩🇴 Dominican Republic (+1)</option>
+                <option data-flag="ea" value="ea (+56)">Easter Island (+56)</option>
+                <option data-flag="ec" value="ec (+593)">🇪🇨 Ecuador (+593)</option>
+                <option data-flag="eg" value="eg (+20)">🇪🇬 Egypt (+20)</option>
+                <option data-flag="el" value="el (+503)">🇸🇻 El Salvador (+503)</option>
+                <option data-flag="el" value="el (+881)">Ellipso (Mobile Satellite service) (+881)</option>
+                <option data-flag="em" value="em (+882)">EMSAT (Mobile Satellite service) (+882)</option>
+                <option data-flag="eq" value="eq (+240)">🇬🇶 Equatorial Guinea (+240)</option>
+                <option data-flag="er" value="er (+291)">🇪🇷 Eritrea (+291)</option>
+                <option data-flag="es" value="es (+372)">🇪🇪 Estonia (+372)</option>
+                <option data-flag="es" value="es (+268)">🇸🇿 Eswatini (+268)</option>
+                <option data-flag="et" value="et (+251)">🇪🇹 Ethiopia (+251)</option>
+                <option data-flag="fa" value="fa (+500)">Falkland Islands (+500)</option>
+                <option data-flag="fa" value="fa (+298)">Faroe Islands (+298)</option>
+                <option data-flag="fi" value="fi (+679)">🇫🇯 Fiji (+679)</option>
+                <option data-flag="fi" value="fi (+358)">🇫🇮 Finland (+358)</option>
+                <option data-flag="fr" value="fr (+33)">🇫🇷 France (+33)</option>
+                <option data-flag="fr" value="fr (+596)">French Antilles (+596)</option>
+                <option data-flag="fr" value="fr (+594)">French Guiana (+594)</option>
+                <option data-flag="fr" value="fr (+689)">French Polynesia (+689)</option>
+                <option data-flag="ga" value="ga (+241)">🇬🇦 Gabon (+241)</option>
+                <option data-flag="ga" value="ga (+220)">🇬🇲 Gambia (+220)</option>
+                <option data-flag="ge" value="ge (+995)">🇬🇪 Georgia (+995)</option>
+                <option data-flag="ge" value="ge (+49)">🇩🇪 Germany (+49)</option>
+                <option data-flag="gh" value="gh (+233)">🇬🇭 Ghana (+233)</option>
+                <option data-flag="gi" value="gi (+350)">Gibraltar (+350)</option>
+                <option data-flag="gl" value="gl (+881)">Global Mobile Satellite System (GMSS) (+881)</option>
+                <option data-flag="gl" value="gl (+881)">Globalstar (Mobile Satellite Service) (+881)</option>
+                <option data-flag="gr" value="gr (+30)">🇬🇷 Greece (+30)</option>
+                <option data-flag="gr" value="gr (+299)">Greenland (+299)</option>
+                <option data-flag="gr" value="gr (+1)">🇬🇩 Grenada (+1)</option>
+                <option data-flag="gu" value="gu (+590)">Guadeloupe (+590)</option>
+                <option data-flag="gu" value="gu (+1)">Guam (+1)</option>
+                <option data-flag="gu" value="gu (+502)">🇬🇹 Guatemala (+502)</option>
+                <option data-flag="gu" value="gu (+44)">Guernsey (+44)</option>
+                <option data-flag="gu" value="gu (+224)">🇬🇳 Guinea (+224)</option>
+                <option data-flag="gu" value="gu (+245)">🇬🇼 Guinea-Bissau (+245)</option>
+                <option data-flag="gu" value="gu (+592)">🇬🇾 Guyana (+592)</option>
+                <option data-flag="ha" value="ha (+509)">🇭🇹 Haiti (+509)</option>
+                <option data-flag="ho" value="ho (+504)">🇭🇳 Honduras (+504)</option>
+                <option data-flag="ho" value="ho (+852)">Hong Kong (+852)</option>
+                <option data-flag="hu" value="hu (+36)" selected>🇭🇺 Hungary (+36)</option>
+                <option data-flag="ic" value="ic (+354)">🇮🇸 Iceland (+354)</option>
+                <option data-flag="ic" value="ic (+881)">ICO Global (Mobile Satellite Service) (+881)</option>
+                <option data-flag="in" value="in (+91)">🇮🇳 India (+91)</option>
+                <option data-flag="in" value="in (+62)">🇮🇩 Indonesia (+62)</option>
+                <option data-flag="in" value="in (+870)">Inmarsat SNAC (+870)</option>
+                <option data-flag="in" value="in (+800)">International Freephone Service (UIFN) (+800)</option>
+                <option data-flag="in" value="in (+882,883)">🇿🇼 International Networks (+882,883)</option>
+                <option data-flag="in" value="in (+979)">International Premium Rate Service (+979)</option>
+                <option data-flag="in" value="in (+808)">International Shared Cost Service (ISCS) (+808)</option>
+                <option data-flag="ir" value="ir (+98)">🇮🇷 Iran (+98)</option>
+                <option data-flag="ir" value="ir (+964)">🇮🇶 Iraq (+964)</option>
+                <option data-flag="ir" value="ir (+353)">🇮🇪 Ireland (+353)</option>
+                <option data-flag="ir" value="ir (+881)">Iridium (Mobile Satellite service) (+881)</option>
+                <option data-flag="is" value="is (+44)">Isle of Man (+44)</option>
+                <option data-flag="is" value="is (+972)">🇮🇱 Israel (+972)</option>
+                <option data-flag="it" value="it (+39)">🇮🇹 Italy (+39)</option>
+                <option data-flag="ja" value="ja (+1)">🇯🇲 Jamaica (+1)</option>
+                <option data-flag="ja" value="ja (+47)">Jan Mayen (+47)</option>
+                <option data-flag="ja" value="ja (+81)">🇯🇵 Japan (+81)</option>
+                <option data-flag="je" value="je (+44)">Jersey (+44)</option>
+                <option data-flag="jo" value="jo (+962)">🇯🇴 Jordan (+962)</option>
+                <option data-flag="ka" value="ka (+7)">🇰🇿 Kazakhstan (+7)</option>
+                <option data-flag="ke" value="ke (+254)">🇰🇪 Kenya (+254)</option>
+                <option data-flag="ki" value="ki (+686)">🇰🇮 Kiribati (+686)</option>
+                <option data-flag="ko" value="ko (+850)">🇰🇵 North Korea (+850)</option>
+                <option data-flag="ko" value="ko (+82)">🇰🇷 South Korea(+82)</option>
+                <option data-flag="ko" value="ko (+383)">Kosovo (+383)</option>
+                <option data-flag="ku" value="ku (+965)">🇰🇼 Kuwait (+965)</option>
+                <option data-flag="ky" value="ky (+996)">🇰🇬 Kyrgyzstan (+996)</option>
+                <option data-flag="la" value="la (+856)">🇱🇦 Laos (+856)</option>
+                <option data-flag="la" value="la (+371)">🇱🇻 Latvia (+371)</option>
+                <option data-flag="le" value="le (+961)">🇱🇧 Lebanon (+961)</option>
+                <option data-flag="le" value="le (+266)">🇱🇸 Lesotho (+266)</option>
+                <option data-flag="li" value="li (+231)">🇱🇷 Liberia (+231)</option>
+                <option data-flag="li" value="li (+218)">🇱🇾 Libya (+218)</option>
+                <option data-flag="li" value="li (+423)">🇱🇮 Liechtenstein (+423)</option>
+                <option data-flag="li" value="li (+370)">🇱🇹 Lithuania (+370)</option>
+                <option data-flag="lu" value="lu (+352)">🇱🇺 Luxembourg (+352)</option>
+                <option data-flag="ma" value="ma (+853)">Macau (+853)</option>
+                <option data-flag="ma" value="ma (+261)">🇲🇬 Madagascar (+261)</option>
+                <option data-flag="ma" value="ma (+265)">🇲🇼 Malawi (+265)</option>
+                <option data-flag="ma" value="ma (+60)">🇲🇾 Malaysia (+60)</option>
+                <option data-flag="ma" value="ma (+960)">🇲🇻 Maldives (+960)</option>
+                <option data-flag="ma" value="ma (+223)">🇲🇱 Mali (+223)</option>
+                <option data-flag="ma" value="ma (+356)">🇲🇹 Malta (+356)</option>
+                <option data-flag="ma" value="ma (+692)">🇲🇭 Marshall Islands (+692)</option>
+                <option data-flag="ma" value="ma (+596)">Martinique (+596)</option>
+                <option data-flag="ma" value="ma (+222)">🇲🇷 Mauritania (+222)</option>
+                <option data-flag="ma" value="ma (+230)">🇲🇺 Mauritius (+230)</option>
+                <option data-flag="ma" value="ma (+262)">Mayotte (+262)</option>
+                <option data-flag="me" value="me (+52)">🇲🇽 Mexico (+52)</option>
+                <option data-flag="mi" value="mi (+691)">Federated States of (+691)</option>
+                <option data-flag="mo" value="mo (+373)">🇲🇩 Moldova (+373)</option>
+                <option data-flag="mo" value="mo (+377)">🇲🇨 Monaco (+377)</option>
+                <option data-flag="mo" value="mo (+976)">🇲🇳 Mongolia (+976)</option>
+                <option data-flag="mo" value="mo (+382)">🇲🇪 Montenegro (+382)</option>
+                <option data-flag="mo" value="mo (+1)">Montserrat (+1)</option>
+                <option data-flag="mo" value="mo (+212)">🇲🇦 Morocco (+212)</option>
+                <option data-flag="mo" value="mo (+258)">🇲🇿 Mozambique (+258)</option>
+                <option data-flag="my" value="my (+95)">Myanmar (+95)</option>
+                <option data-flag="na" value="na (+264)">🇳🇦 Namibia (+264)</option>
+                <option data-flag="na" value="na (+674)">🇳🇷 Nauru (+674)</option>
+                <option data-flag="ne" value="ne (+977)">🇳🇵 Nepal (+977)</option>
+                <option data-flag="ne" value="ne (+31)">🇳🇱 Netherlands (+31)</option>
+                <option data-flag="ne" value="ne (+1)">Nevis (+1)</option>
+                <option data-flag="ne" value="ne (+687)">New Caledonia (+687)</option>
+                <option data-flag="ne" value="ne (+64)">🇳🇿 New Zealand (+64)</option>
+                <option data-flag="ni" value="ni (+505)">🇳🇮 Nicaragua (+505)</option>
+                <option data-flag="ni" value="ni (+227)">🇳🇪 Niger (+227)</option>
+                <option data-flag="ni" value="ni (+234)">🇳🇬 Nigeria (+234)</option>
+                <option data-flag="ni" value="ni (+683)">🇳🇺 Niue (+683)</option>
+                <option data-flag="no" value="no (+672)">Norfolk Island (+672)</option>
+                <option data-flag="no" value="no (+389)">North Macedonia (+389)</option>
+                <option data-flag="no" value="no (+90)">Northern Cyprus (+90)</option>
+                <option data-flag="no" value="no (+44)">Northern Ireland (+44)</option>
+                <option data-flag="no" value="no (+1)">Northern Mariana Islands (+1)</option>
+                <option data-flag="no" value="no (+47)">🇳🇴 Norway (+47)</option>
+                <option data-flag="om" value="om (+968)">🇴🇲 Oman (+968)</option>
+                <option data-flag="pa" value="pa (+92)">🇵🇰 Pakistan (+92)</option>
+                <option data-flag="pa" value="pa (+680)">🇵🇼 Palau (+680)</option>
+                <option data-flag="pa" value="pa (+970)">🇵🇸 Palestine (+970)</option>
+                <option data-flag="pa" value="pa (+507)">🇵🇦 Panama (+507)</option>
+                <option data-flag="pa" value="pa (+675)">🇵🇬 Papua New Guinea (+675)</option>
+                <option data-flag="pa" value="pa (+595)">🇵🇾 Paraguay (+595)</option>
+                <option data-flag="pe" value="pe (+51)">🇵🇪 Peru (+51)</option>
+                <option data-flag="ph" value="ph (+63)">🇵🇭 Philippines (+63)</option>
+                <option data-flag="pi" value="pi (+64)">Pitcairn Islands (+64)</option>
+                <option data-flag="po" value="po (+48)">🇵🇱 Poland (+48)</option>
+                <option data-flag="po" value="po (+351)">🇵🇹 Portugal (+351)</option>
+                <option data-flag="pu" value="pu (+1)">🇵🇷 Puerto Rico (+1)</option>
+                <option data-flag="qa" value="qa (+974)">🇶🇦 Qatar (+974)</option>
+                <option data-flag="ré" value="ré (+262)">Réunion (+262)</option>
+                <option data-flag="ro" value="ro (+40)">🇷🇴 Romania (+40)</option>
+                <option data-flag="ru" value="ru (+7)">🇷🇺 Russia (+7)</option>
+                <option data-flag="rw" value="rw (+250)">🇷🇼 Rwanda (+250)</option>
+                <option data-flag="sa" value="sa (+599)">Saba (+599)</option>
+                <option data-flag="sa" value="sa (+590)">lemy (+590)</option>
+                <option data-flag="sa" value="sa (+290)">Saint Helena (+290)</option>
+                <option data-flag="sa" value="sa (+1)">🇰🇳 Saint Kitts and Nevis (+1)</option>
+                <option data-flag="sa" value="sa (+1)">🇱🇨 Saint Lucia (+1)</option>
+                <option data-flag="sa" value="sa (+590)">Saint Martin (France) (+590)</option>
+                <option data-flag="sa" value="sa (+508)">Saint Pierre and Miquelon (+508)</option>
+                <option data-flag="sa" value="sa (+1)">🇻🇨 Saint Vincent and the Grenadines (+1)</option>
+                <option data-flag="sa" value="sa (+685)">🇼🇸 Samoa (+685)</option>
+                <option data-flag="sa" value="sa (+378)">🇸🇲 San Marino (+378)</option>
+                <option data-flag="sã" value="sã (+239)">ncipe (+239)</option>
+                <option data-flag="sa" value="sa (+966)">🇸🇦 Saudi Arabia (+966)</option>
+                <option data-flag="se" value="se (+221)">🇸🇳 Senegal (+221)</option>
+                <option data-flag="se" value="se (+381)">🇷🇸 Serbia (+381)</option>
+                <option data-flag="se" value="se (+248)">🇸🇨 Seychelles (+248)</option>
+                <option data-flag="si" value="si (+232)">🇸🇱 Sierra Leone (+232)</option>
+                <option data-flag="si" value="si (+65)">🇸🇬 Singapore (+65)</option>
+                <option data-flag="si" value="si (+599)">Sint Eustatius (+599)</option>
+                <option data-flag="si" value="si (+1)">Sint Maarten (Netherlands) (+1)</option>
+                <option data-flag="sl" value="sl (+421)">🇸🇰 Slovakia (+421)</option>
+                <option data-flag="sl" value="sl (+386)">🇸🇮 Slovenia (+386)</option>
+                <option data-flag="so" value="so (+677)">🇸🇧 Solomon Islands (+677)</option>
+                <option data-flag="so" value="so (+252)">🇸🇴 Somalia (+252)</option>
+                <option data-flag="so" value="so (+27)">🇿🇦 South Africa (+27)</option>
+                <option data-flag="so" value="so (+500)">South Georgia and the South Sandwich Islands (+500)</option>
+                <option data-flag="so" value="so (+7)">South Ossetia (+7)</option>
+                <option data-flag="so" value="so (+211)">South Sudan (+211)</option>
+                <option data-flag="sp" value="sp (+34)">🇪🇸 Spain (+34)</option>
+                <option data-flag="sr" value="sr (+94)">🇱🇰 Sri Lanka (+94)</option>
+                <option data-flag="su" value="su (+249)">🇸🇩 Sudan (+249)</option>
+                <option data-flag="su" value="su (+597)">🇸🇷 Suriname (+597)</option>
+                <option data-flag="sv" value="sv (+47)">Svalbard (+47)</option>
+                <option data-flag="sw" value="sw (+46)">🇸🇪 Sweden (+46)</option>
+                <option data-flag="sw" value="sw (+41)">🇨🇭 Switzerland (+41)</option>
+                <option data-flag="sy" value="sy (+963)">🇸🇾 Syria (+963)</option>
+                <option data-flag="ta" value="ta (+886)">🇹🇼 Taiwan (+886)</option>
+                <option data-flag="ta" value="ta (+992)">🇹🇯 Tajikistan (+992)</option>
+                <option data-flag="ta" value="ta (+255)">🇹🇿 Tanzania (+255)</option>
+                <option data-flag="th" value="th (+66)">🇹🇭 Thailand (+66)</option>
+                <option data-flag="th" value="th (+882)">Thuraya (Mobile Satellite service) (+882)</option>
+                <option data-flag="ea" value="ea (+670)">East Timor (Timor-Leste) (+670)</option>
+                <option data-flag="to" value="to (+228)">🇹🇬 Togo (+228)</option>
+                <option data-flag="to" value="to (+690)">Tokelau (+690)</option>
+                <option data-flag="to" value="to (+676)">🇹🇴 Tonga (+676)</option>
+                <option data-flag="tr" value="tr (+373)">Transnistria (+373)</option>
+                <option data-flag="tr" value="tr (+1)">🇹🇹 Trinidad and Tobago (+1)</option>
+                <option data-flag="tr" value="tr (+290)">Tristan da Cunha (+290)</option>
+                <option data-flag="tu" value="tu (+216)">🇹🇳 Tunisia (+216)</option>
+                <option data-flag="tu" value="tu (+90)">🇹🇷 Turkey (+90)</option>
+                <option data-flag="tu" value="tu (+993)">🇹🇲 Turkmenistan (+993)</option>
+                <option data-flag="tu" value="tu (+1)">Turks and Caicos Islands (+1)</option>
+                <option data-flag="tu" value="tu (+688)">Tuvalu (+688)</option>
+                <option data-flag="ug" value="ug (+256)">🇺🇬 Uganda (+256)</option>
+                <option data-flag="uk" value="uk (+380)">🇺🇦 Ukraine (+380)</option>
+                <option data-flag="un" value="un (+971)">🇦🇪 United Arab Emirates (+971)</option>
+                <option data-flag="un" value="un (+44)">🇬🇧 United Kingdom (+44)</option>
+                <option data-flag="un" value="un (+1)">🇺🇸 United States (+1)</option>
+                <option data-flag="ur" value="ur (+598)">🇺🇾 Uruguay (+598)</option>
+                <option data-flag="us" value="us (+1)">US Virgin Islands (+1)</option>
+                <option data-flag="uz" value="uz (+998)">🇺🇿 Uzbekistan (+998)</option>
+                <option data-flag="va" value="va (+678)">🇻🇺 Vanuatu (+678)</option>
+                <option data-flag="va" value="va (+39)">Vatican City State (Holy See) (+39)</option>
+                <option data-flag="ve" value="ve (+58)">🇻🇪 Venezuela (+58)</option>
+                <option data-flag="vi" value="vi (+84)">🇻🇳 Vietnam (+84)</option>
+                <option data-flag="wa" value="wa (+1)">🇺🇸USA (+1)</option>
+                <option data-flag="wa" value="wa (+681)">Wallis and Futuna (+681)</option>
+                <option data-flag="ye" value="ye (+967)">Yemen (+967)</option>
+                <option data-flag="za" value="za (+260)">🇿🇲 Zambia (+260)</option>
+                <option data-flag="za" value="za (+255)">Zanzibar (+255)</option>
+                <option data-flag="zi" value="zi (+263)">🇿🇼 Zimbabwe (+263)</option>
             </select>
             <input type="tel" placeholder="<?php echo $config['translations']['sections']['contact']['phone']; ?>" name="phone" id="phone" required><br />
         </div>

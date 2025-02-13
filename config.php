@@ -1,6 +1,6 @@
 <?php
 $config['environment'] = 'dev';
-$config['theme'] = 'default';
+$config['theme'] = 'beyondstart';
 $config['appName'] = 'BeyondStartSolution';
 $config['siteLanguage'] = 'en';
 $config['siteEmail'] = 'zoltan@beyondstart.solutions';

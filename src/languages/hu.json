@@ -1,6 +1,6 @@
 {
     "header": {
-        "logo_alt": "BeyondStart Megoldások Logója",
+        "logo_alt": "BeyondStart Solutions Logója",
         "menu": {
             "about": "Rólunk",
             "services": "Szolgáltatások",
@@ -9,19 +9,11 @@
         }
     },
     "hero": {
-        "welcome": "Üdvözöljük a BeyondStart Megoldásoknál",
+        "welcome": "BeyondStart Solutions",
         "description": "Innovatív megoldások egy jobb jövőért",
         "button": "Kezdje el"
     },
     "sections": {
-        "about": {
-            "title": "Rólunk",
-            "description": "A BeyondStart Megoldásoknál elkötelezettek vagyunk, hogy korszerű megoldásokat nyújtsunk, amelyek segítenek a vállalkozásoknak fejlődni a digitális korszakban."
-        },
-        "services": {
-            "title": "Szolgáltatásaink",
-            "items": ["Szolgáltatás 1", "Szolgáltatás 2", "Szolgáltatás 3"]
-        },
         "portfolio": {
             "title": "Portfóliónk",
             "items": ["Projekt 1", "Projekt 2", "Projekt 3"]
@@ -37,7 +29,7 @@
         }
     },
     "footer": {
-        "copyright": "© 2025 BeyondStart Megoldások. Minden jog fenntartva."
+        "copyright": "© 2025 BeyondStart Solutions. Minden jog fenntartva."
     },
     "email": {
         "contact_email_title": "Kapcsolatfelvétel",
@@ -46,6 +38,105 @@
         "contact_email_country_code": "Országkód",
         "contact_email_phone": "Telefon",
         "contact_email_email": "Email",
-        "contact_email_message": "Üzenet"
+        "contact_email_message": "Üzenet",
+        "contact_email_success_message": "E-mail elküldve! Köszönjük szépen! Hamarosan felvesszük Önnel a kapcsolatot!",
+        "validation": {
+            "full_name" : "Teljes nevet kötelező megadni!",
+            "company": "Cégnevet kötelező megadni!",
+            "countryCode": "Országkódot kötelező megadni!",
+            "phone": "Telefonszámot kötelező megadni! Csak számok engedélyezettek!",
+            "email1": "Rossz e-mail formátum.",
+            "email2": "Ejej! Ennek a domainnek nincs is e-mail szolgáltatása!",
+            "email3": "Eldobható emailcímek nem engedettek!",
+            "message": "Az üzenet mező kitöltése kötelező!",
+            "recaptcha": "Captha ellenőrzése sikertelen!"
+        }
+    },
+    "services": {
+        "drupal_development": {
+            "title": "Drupal fejlesztés",
+            "description": "Van egy régi vagy egy új Drupal rendszered? Nincs lehetetlen! Szakosodtunk Drupal fejlesztésre, teljes csapatokat és projektmenedzsmentet biztosítunk.",
+            "button": "Ajánlatkérés most!"
+        },
+        "drupal_support": {
+            "title": "Drupal 7 támogatás az EOL után",
+            "description": "Támogatjuk a régi Drupal 7 kódbázisokat. Évtizedes tapasztalattal biztosítjuk, hogy rendszered biztonságos és megbízható maradjon.",
+            "button": "Ajánlatkérés most!"
+        },
+        "project_management": {
+            "title": "Projektmenedzsment",
+            "description": "Teljes körű projektmenedzsment a tervezéstől a megvalósításig, tapasztalt projektvezetőkkel, scrum masterekkel és fejlesztőkkel.",
+            "button": "Ajánlatkérés most!"
+        },
+        "it_consultancy": {
+            "title": "IT tanácsadás",
+            "description": "Elakadtál? Mi az őszinteséget értékeljük. Ha nem mi vagyunk a megfelelő megoldás, vagy valami másra van szükséged, megmondjuk egyenesen.",
+            "button": "Ajánlatkérés most!"
+        }
+    },
+    "clients": {
+        "title": "Megbízható partnereink",
+        "partners": [
+            {
+                "name": "ACEG",
+                "key": "aceg",
+                "description": "Minőségi és biztonsági szabványok biztosítása műszaki telepítésekhez és ellenőrzésekhez.",
+                "url": "https://aceg.be/"
+            },
+            {
+                "name": "Kinepolis",
+                "key": "kinepolis",
+                "description": "A mozi szórakoztatás és a filmélmények globális vezetője.",
+                "url": "https://corporate.kinepolis.com/en/about-kinepolis"
+            },
+            {
+                "name": "TechSoup",
+                "key": "techsoup",
+                "description": "Technológia és társadalmi haszon összekapcsolása.",
+                "url": "https://www.techsoup.org/"
+            },
+            {
+                "name": "Bread Creative",
+                "key": "bread",
+                "description": "Innovatív márkaépítés és dizájnmegoldások hatásos kommunikációhoz.",
+                "url": "https://breadcreative.com/"
+            },
+            {
+                "name": "CompanyApp",
+                "key": "companyapp",
+                "description": "Digitális kommunikációs eszközök modern üzleti igényekhez.",
+                "url": "https://companyapp.co.uk/communicator/"
+            },
+            {
+                "name": "Nuaxia",
+                "key": "nuaxia",
+                "description": "Életciklus stratégiák átalakítása akciótervekké.",
+                "url": "https://www.nuaxia.com/"
+            },
+            {
+                "name": "Vodafone",
+                "key": "vodafone",
+                "description": "Globális távközlési óriás, amely a kapcsolattartást biztosítja.",
+                "url": "https://www.vodafone.com/"
+            },
+            {
+                "name": "Kocka Narancs",
+                "key": "kocka_narancs",
+                "description": "Az élet egyszerűsítése korszerű IT és kreatív megoldásokkal.",
+                "url": "https://www.kockanarancs.hu/"
+            },
+            {
+                "name": "Columbia Games",
+                "key": "columbia_games",
+                "description": "Időtlen társasjátékok és RPG-k alkotása, amelyek inspirálnak és szórakoztatnak.",
+                "url": "https://columbiagames.com/"
+            }
+        ]
+    },
+    "about": {
+        "title": "Rólunk",
+        "slogan": "Ahol mások feladják, mi ott kezdünk.",
+        "details": "A legnehezebb feladatok megoldására szakosodtunk—olyan munkákra, amelyeket senki más nem akar vagy nem képes elvégezni. Régi, elavult rendszerek? Spagettikód? Rossz architektúra? Mi vagyunk a megoldás. Több mint 20 év tapasztalattal a kódolás, tanácsadás és projektmenedzsment területén őszinte véleményeket és cselekvőképes tanácsokat nyújtunk.",
+        "values": "Alapvető értékeink az őszinteség, a professzionális szolgáltatás és az üzleti gondolkodásmód, amely a sikeredet támogatja."
     }
 }

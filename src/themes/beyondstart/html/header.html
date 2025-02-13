@@ -1,0 +1,44 @@
+<div class="header-row">
+    <div id="logo">
+        <img src="themes/<?php print $config['theme']; ?>/images/logos/only-logo-trasparent.png" alt="<?php echo $config['translations']['header']['logo_alt']; ?>">
+    </div>
+    <h1><?php echo $config['translations']['hero']['welcome']; ?></h1>
+</div>
+<div class="header-row">
+    <div id="menu" class="header-item">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about" class="menu-item"><?php echo $config['translations']['header']['menu']['about']; ?></a>
+                </li>
+                <li>
+                    <a href="#services" class="menu-item"><?php echo $config['translations']['header']['menu']['services']; ?></a>
+                </li>
+                <li>
+                    <a href="#clients" class="menu-item"><?php echo $config['translations']['header']['menu']['portfolio']; ?></a>
+                </li>
+                <li>
+                    <a href="#contact" class="menu-item"><?php echo $config['translations']['header']['menu']['contact']; ?></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <form id="languageChange">
+        <select id="language-selector" name="lang" onchange="document.getElementById('languageChange').submit()">
+            <option
+                    class="en"
+                    value="en"
+            <?php echo ($config['siteLanguage'] === 'en') ? 'selected' : ''; ?>
+            >
+            🇺🇸  English
+            </option>
+            <option
+                    class="hu"
+                    value="hu"
+            <?php echo ($config['siteLanguage'] === 'hu') ? 'selected' : ''; ?>
+            >
+            🇭🇺  Magyar
+            </option>
+        </select>
+    </form>
+</div>

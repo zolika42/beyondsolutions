@@ -9,19 +9,11 @@
         }
     },
     "hero": {
-        "welcome": "Welcome to BeyondStart Solutions",
+        "welcome": "BeyondStart Solutions",
         "description": "Innovative Solutions for a Better Tomorrow",
         "button": "Get Started"
     },
     "sections": {
-        "about": {
-            "title": "About Us",
-            "description": "At BeyondStart Solutions, we are committed to delivering cutting-edge solutions that help businesses thrive in a digital era."
-        },
-        "services": {
-            "title": "Our Services",
-            "items": ["Service 1", "Service 2", "Service 3"]
-        },
         "portfolio": {
             "title": "Our Portfolio",
             "items": ["Project 1", "Project 2", "Project 3"]
@@ -46,6 +38,105 @@
         "contact_email_country_code": "Country code",
         "contact_email_phone": "Phone",
         "contact_email_email": "Email",
-        "contact_email_message": "Message"
+        "contact_email_message": "Message",
+        "contact_email_success_message": "Email has sent! Thank you for your message! We will get back to you very shortly!",
+        "validation": {
+            "full_name" : "Full Name is required.",
+            "company": "Company is required.",
+            "countryCode": "Country code is required.",
+            "phone": "Valid phone number is required. Only numbers are allowed!",
+            "email1": "Invalid email format.",
+            "email2": "Invalid email domain. No MX record found.",
+            "email3": "Disposable email addresses are not allowed.",
+            "message": "Message field is required!",
+            "recaptcha": "reCAPTCHA verification failed!"
+        }
+    },
+    "services": {
+        "drupal_development": {
+            "title": "Drupal Development",
+            "description": "Do you have an old or the latest Drupal? There’s nothing impossible to implement. We specialize in Drupal development, providing complete teams and project management.",
+            "button": "Get a Quote now!"
+        },
+        "drupal_support": {
+            "title": "Drupal 7 Support After EOL",
+            "description": "We support old codebases in Drupal 7. With decades of experience, our team ensures your system remains secure and reliable.",
+            "button": "Get a Quote now!"
+        },
+        "project_management": {
+            "title": "Project Management",
+            "description": "We provide 360-degree project management from planning to delivery, with skilled project managers, scrum masters, and developers, offering complete teams and solutions.",
+            "button": "Get a Quote now!"
+        },
+        "it_consultancy": {
+            "title": "IT Consultancy",
+            "description": "Are you stuck? We value honesty and efficiency. If we’re not the right solution or you need something else, we’ll tell you straight without any hassle or time-wasting.",
+            "button": "Get a Quote now!"
+        }
+    },
+    "clients": {
+        "title": "Our Trusted Partners",
+        "partners": [
+            {
+                "name": "ACEG",
+                "key": "aceg",
+                "description": "Ensuring quality and safety standards for technical installations and inspections.",
+                "url": "https://aceg.be/"
+            },
+            {
+                "name": "Kinepolis",
+                "key": "kinepolis",
+                "description": "A global leader in cinema entertainment and movie experiences.",
+                "url": "https://corporate.kinepolis.com/en/about-kinepolis"
+            },
+            {
+                "name": "TechSoup",
+                "key": "techsoup",
+                "description": "Bridging the gap between technology and social good.",
+                "url": "https://www.techsoup.org/"
+            },
+            {
+                "name": "Bread Creative",
+                "key": "bread",
+                "description": "Innovative branding and design solutions for impactful communication.",
+                "url": "https://breadcreative.com/"
+            },
+            {
+                "name": "CompanyApp",
+                "key": "companyapp",
+                "description": "Delivering digital communication tools tailored to modern business needs.",
+                "url": "https://companyapp.co.uk/communicator/"
+            },
+            {
+                "name": "Nuaxia",
+                "key": "nuaxia",
+                "description": "Transforming insights into actionable strategies for the life sciences sector.",
+                "url": "https://www.nuaxia.com/"
+            },
+            {
+                "name": "Vodafone",
+                "key": "vodafone",
+                "description": "A telecommunications giant powering global connectivity.",
+                "url": "https://www.vodafone.com/"
+            },
+            {
+                "name": "Kocka Narancs",
+                "key": "kocka_narancs",
+                "description": "Simplifying life with cutting-edge IT and creative solutions.",
+                "url": "https://www.kockanarancs.hu/"
+            },
+            {
+                "name": "Columbia Games",
+                "key": "columbia_games",
+                "description": "Creating timeless board games and RPGs that inspire and entertain.",
+                "url": "https://columbiagames.com/"
+            }
+        ]
+    },
+    "about": {
+        "title": "About Us",
+        "slogan": "Where others give up, we start from there.",
+        "details": "We specialize in taking on the hardest jobs—tasks no one else wants or is able to do. Old, legacy systems? Spaghetti code? Bad architecture? We are your solution. With more than 20 years of experience in coding, consulting, and project management, we provide honest opinions and actionable insights.",
+        "values": "Our core values are honesty, professional service, and a business mindset focused on driving your success."
     }
 }

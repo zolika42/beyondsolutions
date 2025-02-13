@@ -55,7 +55,8 @@ function initScrollTop() {
 function initTomSelect() {
 	// Initialize Tom Select on the countryCode select dropdown
 	new TomSelect("#countryCode",{
-		create: true,
+		create: false,
+		preload: true,
 		sortField: {
 			field: "text",
 			direction: "asc"
