@@ -1,5 +1,4 @@
 <?php
-
 class HTMLTemplateClass
 {
     private string $themeDirectory;
@@ -41,13 +40,27 @@ class HTMLTemplateClass
     }
 
     /**
+     * Returns embedded CSS from the local CSS file as a <style> block.
+     */
+    private function getEmbeddedCSS(): string
+    {
+        $cssFilePath = $this->themeDirectory . '/css/style.min.css';
+        if (file_exists($cssFilePath)) {
+            $cssContent = file_get_contents($cssFilePath);
+            // Optionally, further minify or process the CSS content if needed.
+            return "<style>" . $cssContent . "</style>";
+        }
+        return "";
+    }
+
+    /**
      * @return false|string
      * @throws Exception
      */
     public function loadGeneratedHTML(): false|string
     {
         $filePath = __DIR__ . "/../../dist/" . $this->config['siteLanguage'] . "/index.html";
-        var_dump($filePath);exit();
+        //var_dump($filePath);exit();
         if (!file_exists($filePath)) {
             $this->render();
         }
@@ -91,10 +104,13 @@ class HTMLTemplateClass
         $body = $this->loadHTMLFile('body.html');
         $footer = $this->loadHTMLFile('footer.html');
 
+        // Get the embedded CSS
+        $embeddedCSS = $this->getEmbeddedCSS();
+
         // Replace placeholders in the layout with actual content
         $htmlDocument = str_replace(
-            ['{{head}}', '{{body}}', '{{footer}}'],
-            [$header, $body, $footer],
+            ['{{head}}', '{{body}}', '{{footer}}', '{{local-css}}'],
+            [$header, $body, $footer, $embeddedCSS],
             $layout
         );
 
