@@ -306,10 +306,6 @@ function initTomSelect() {
 			// Set autocomplete attribute on the generated TomSelect input
 			this.control_input.setAttribute("autocomplete", "tel-country-code");
 		},
-		
-		onFocus: function () {
-			this.clear(); // Clear the selected value when the field gains focus
-		},
 
 		onBlur: function () {
 			if (!this.getValue()) {
