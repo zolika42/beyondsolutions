@@ -229,13 +229,9 @@ function handleContactForm() {
 			field.placeholder = "";
 			field.removeEventListener("input", cancelBlink);
 		});
-	});
-
-	// --- Scroll to the form if any errors were present ---
-	if (errorsExist) {
 		// Scroll the form into view (smoothly and centered on the screen)
 		form.scrollIntoView({ behavior: "smooth", block: "center" });
-	}
+	});
 }
 
 /**
@@ -285,6 +281,9 @@ function handleCaptchaError() {
 			grecaptcha.reset();
 		}
 	}, 5000);
+	const form = document.querySelector(".contact-form");
+	// Scroll the form into view (smoothly and centered on the screen)
+	form.scrollIntoView({ behavior: "smooth", block: "center" });
 }
 
 /**
@@ -516,6 +515,8 @@ function handleFormSuccess() {
 				e.value = ''
 			}
 		});
+		// Scroll the form into view (smoothly and centered on the screen)
+		form.scrollIntoView({ behavior: "smooth", block: "center" });
 	}
 }
 
