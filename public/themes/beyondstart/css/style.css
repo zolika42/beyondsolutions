@@ -231,7 +231,7 @@ body {
     color: var(--textcolor);
 }
 
-p {
+section p {
     color: var(--greybackground);
     font-weight: 100;
     line-height: 1.5em;
@@ -806,7 +806,7 @@ div#logo {
 /* --- Footer --- */
 footer {
     background-color: var(--textcolor);
-    color: var(--white);
+    color: var(--white) !important;
     text-align: center;
     padding: 10px;
     position: fixed;
