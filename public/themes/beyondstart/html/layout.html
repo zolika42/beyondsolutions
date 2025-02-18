@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeyondStart Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet" type="text/css">
+    </noscript>
     <link rel="stylesheet" href="themes/<?php print $config['theme']; ?>/css/style.min.css">
     <script type="text/javascript" src="themes/<?php print $config['theme']; ?>/js/script.min.js" async defer></script>
     <script src="https://www.google.com/recaptcha/api.js?hl=<?php print $config['siteLanguage']; ?>" async defer></script>
