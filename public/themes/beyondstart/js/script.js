@@ -307,6 +307,9 @@ function initTomSelect() {
 			this.control_input.setAttribute("autocomplete", "tel-country-code");
 		},
 
+		onFocus: function () {
+		},
+
 		onBlur: function () {
 			if (!this.getValue()) {
 				this.setTextboxValue(""); // Ensure no text remains when focus is lost
