@@ -191,4 +191,4 @@ $api->processRequest();
 
 // Proceed with rendering the website or other tasks
 // For example, include the main website content
-require_once __DIR__ . '/../index.php';
+require_once __DIR__ . '/../../public/index.php';

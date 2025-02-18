@@ -15,7 +15,7 @@ class HTMLTemplateClass
         $this->config = $config;
         $selectedTheme = $config['theme'] ?? 'default';
         $this->themeDirectory = rtrim("themes/$selectedTheme", '/');
-        $this->themeDirectory = __DIR__ . '/../' . $this->themeDirectory;
+        $this->themeDirectory = __DIR__ . '/../../public/' . $this->themeDirectory;
 
         if (!is_dir($this->themeDirectory)) {
             throw new Exception("Theme directory not found: {$this->themeDirectory}");
@@ -47,6 +47,7 @@ class HTMLTemplateClass
     public function loadGeneratedHTML(): false|string
     {
         $filePath = __DIR__ . "/../../dist/" . $this->config['siteLanguage'] . "/index.html";
+        var_dump($filePath);exit();
         if (!file_exists($filePath)) {
             $this->render();
         }
@@ -125,5 +126,4 @@ class HTMLTemplateClass
 
 // Instantiate and render the template
 $HTMLTemplateClass = new HTMLTemplateClass();
-// $HTMLTemplateClass->render();
-$HTMLTemplateClass->renderGeneratedHTML();
+$HTMLTemplateClass->render();

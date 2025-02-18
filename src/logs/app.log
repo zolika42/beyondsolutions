@@ -1,5 +1,143 @@
-[2025-02-13 10:26:27] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
-[2025-02-13 10:26:27] BeyondStartSolution.ERROR: [Error] include(/var/www/html/src/php/../../dist/en/index.html): Failed to open stream: No such file or directory in /var/www/html/src/php/6HTMLTemplateClass.php on line 57
-[2025-02-13 10:26:27] BeyondStartSolution.ERROR: [Error] include(): Failed opening '/var/www/html/src/php/../../dist/en/index.html' for inclusion (include_path='.:/usr/share/php') in /var/www/html/src/php/6HTMLTemplateClass.php on line 57
-[2025-02-13 10:26:27] BeyondStartSolution.ERROR: [Shutdown] filemtime(): stat failed for /var/www/html/src/logs/app.log in /var/www/html/src/php/2LoggerClass.php on line 109
-[2025-02-13 10:26:27] BeyondStartSolution.ERROR: [Shutdown] filemtime(): stat failed for /var/www/html/src/logs/app.log in /var/www/html/src/php/2LoggerClass.php on line 109
+[2025-02-18 09:44:46] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:44:46] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:44:46] BeyondStartSolution.ERROR: [Shutdown] filemtime(): stat failed for /var/www/html/src/logs/app.log in /var/www/html/src/php/2LoggerClass.php on line 109
+[2025-02-18 09:45:48] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:45:48] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:03] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:03] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:10] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:10] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:10] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:27] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:27] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:27] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:33] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:33] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:33] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:51] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:51] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:51] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:58] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:58] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:58] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:58] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:58] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:58] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:46:59] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:47:46] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:47:46] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:47:46] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:48:24] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:48:24] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:48:24] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:48:26] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:48:26] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:48:26] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:48:54] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:48:54] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:48:54] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:50:44] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:50:44] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:50:44] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:50:57] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:50:57] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:50:57] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:51:22] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:51:22] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:51:22] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:03] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:52:03] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:03] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:13] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:52:13] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:13] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:23] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:52:23] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:23] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:34] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:52:34] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:34] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:44] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:52:44] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:52:44] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:02] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:53:02] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:02] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:06] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:53:06] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:06] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:20] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:53:20] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:20] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:53:37] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:53:54] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:04] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:04] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php./index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:54:04] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php./index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:54:13] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:13] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:54:13] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:54:23] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:23] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:54:23] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 194
+[2025-02-18 09:54:33] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:33] BeyondStartSolution.ERROR: [Error] require_once(/var/www/html/src/php/../../index.php): Failed to open stream: No such file or directory in /var/www/html/src/php/4APIClass.php on line 195
+[2025-02-18 09:54:33] BeyondStartSolution.ERROR: Uncaught exception: Failed opening required '/var/www/html/src/php/../../index.php' (include_path='.:/usr/share/php') in /var/www/html/src/php/4APIClass.php on line 195
+[2025-02-18 09:54:45] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:45] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:54:49] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:49] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:54:59] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:54:59] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:10] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:10] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:10] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:10] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:11] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:11] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:11] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:11] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:30] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:30] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:41] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:41] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:50] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:50] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:55:56] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:55:56] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 21
+[2025-02-18 09:56:14] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:56:14] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 22
+[2025-02-18 09:56:27] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:56:27] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 22
+[2025-02-18 09:56:40] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:56:40] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 22
+[2025-02-18 09:57:02] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:57:39] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:57:39] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 23
+[2025-02-18 09:58:05] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:58:05] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 23
+[2025-02-18 09:58:06] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:58:06] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 23
+[2025-02-18 09:58:07] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:58:07] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 23
+[2025-02-18 09:58:15] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:58:15] BeyondStartSolution.ERROR: Uncaught exception: Theme directory not found: /var/www/html/src/php/../themes/beyondstart in /var/www/html/src/php/6HTMLTemplateClass.php on line 22
+[2025-02-18 09:58:34] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 09:58:40] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 10:02:57] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 10:03:03] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4
+[2025-02-18 10:03:14] BeyondStartSolution.INFO: Minification complete. Number of files processed: 4

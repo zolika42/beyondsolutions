@@ -1,69 +1,14 @@
-<!DOCTYPE html>
-<html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeyondStart Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="themes/beyondstart/css/style.min.css">
-    <script type="text/javascript" src="themes/beyondstart/js/script.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?hl=hu" async defer></script>
-</head>
-<body>
-<header>
-    <div class="header-row">
-    <div id="logo">
-        <img src="themes/beyondstart/images/logos/only-logo-trasparent.png" alt="BeyondStart Solutions Logója">
-    </div>
-    <h1>BeyondStart Solutions</h1>
-</div>
-<div class="header-row">
-    <div id="menu" class="header-item">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about" class="menu-item">Rólunk</a>
-                </li>
-                <li>
-                    <a href="#services" class="menu-item">Szolgáltatások</a>
-                </li>
-                <li>
-                    <a href="#clients" class="menu-item">Portfólió</a>
-                </li>
-                <li>
-                    <a href="#contact" class="menu-item">Kapcsolat</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    <form id="languageChange">
-        <select id="language-selector" name="lang" onchange="document.getElementById('languageChange').submit()">
-            <option
-                    class="en"
-                    value="en"
-                        >
-            🇺🇸  English
-            </option>
-            <option
-                    class="hu"
-                    value="hu"
-            selected            >
-            🇭🇺  Magyar
-            </option>
-        </select>
-    </form>
-</div>
-
-</header>
-<main>
-    <section id="about" class="visible section-container">
+<section id="about" class="visible section-container">
     <div class="about-content box box-featured">
         <div class="about-container box-container">
             <div class="about about-item box box-item">
                 <p>
-                    Ahol mások feladják, mi ott kezdünk.                    A legnehezebb feladatok megoldására szakosodtunk—olyan munkákra, amelyeket senki más nem akar vagy nem képes elvégezni. Régi, elavult rendszerek? Spagettikód? Rossz architektúra? Mi vagyunk a megoldás. Több mint 20 év tapasztalattal a kódolás, tanácsadás és projektmenedzsment területén őszinte véleményeket és cselekvőképes tanácsokat nyújtunk.                    Alapvető értékeink az őszinteség, a professzionális szolgáltatás és az üzleti gondolkodásmód, amely a sikeredet támogatja.                </p>
+                    <?php echo $config['translations']['about']['slogan']; ?>
+                    <?php echo $config['translations']['about']['details']; ?>
+                    <?php echo $config['translations']['about']['values']; ?>
+                </p>
                 <form action="#contact">
-                    <input type="submit" value="Ajánlatkérés most!" class="button featured-button-main" />
+                    <input type="submit" value="<?php echo $config['translations']['services']['drupal_development']['button']; ?>" class="button featured-button-main" />
                 </form>
             </div>
         </div>
@@ -71,127 +16,85 @@
 </section>
 
 <section id="services" class="services-section visible section-container">
-    <h2>Szolgáltatások</h2>
+    <h2><?php echo $config['translations']['header']['menu']['services']; ?></h2>
     <div class="services-container box-container">
-                <div class="service service-item box box-item">
-            <img src="../images/icons/drupal_development.png" alt="Drupal fejlesztés Icon">
-            <h3>Drupal fejlesztés</h3>
-            <p>Van egy régi vagy egy új Drupal rendszered? Nincs lehetetlen! Szakosodtunk Drupal fejlesztésre, teljes csapatokat és projektmenedzsmentet biztosítunk.</p>
+        <?php foreach ($config['translations']['services'] as $service_key => $service) { ?>
+        <div class="service service-item box box-item">
+            <img src="/public/images/icons/<?php echo $service_key; ?>.png" alt="<?php echo $service['title']; ?> Icon">
+            <h3><?php echo $service['title']; ?></h3>
+            <p><?php echo $service['description']; ?></p>
             <form action="#contact">
-                <input type="submit" value="Ajánlatkérés most!" class="button" />
+                <input type="submit" value="<?php echo $config['translations']['services']['drupal_development']['button']; ?>" class="button" />
             </form>
         </div>
-                <div class="service service-item box box-item">
-            <img src="../images/icons/drupal_support.png" alt="Drupal 7 támogatás az EOL után Icon">
-            <h3>Drupal 7 támogatás az EOL után</h3>
-            <p>Támogatjuk a régi Drupal 7 kódbázisokat. Évtizedes tapasztalattal biztosítjuk, hogy rendszered biztonságos és megbízható maradjon.</p>
-            <form action="#contact">
-                <input type="submit" value="Ajánlatkérés most!" class="button" />
-            </form>
-        </div>
-                <div class="service service-item box box-item">
-            <img src="../images/icons/project_management.png" alt="Projektmenedzsment Icon">
-            <h3>Projektmenedzsment</h3>
-            <p>Teljes körű projektmenedzsment a tervezéstől a megvalósításig, tapasztalt projektvezetőkkel, scrum masterekkel és fejlesztőkkel.</p>
-            <form action="#contact">
-                <input type="submit" value="Ajánlatkérés most!" class="button" />
-            </form>
-        </div>
-                <div class="service service-item box box-item">
-            <img src="../images/icons/it_consultancy.png" alt="IT tanácsadás Icon">
-            <h3>IT tanácsadás</h3>
-            <p>Elakadtál? Mi az őszinteséget értékeljük. Ha nem mi vagyunk a megfelelő megoldás, vagy valami másra van szükséged, megmondjuk egyenesen.</p>
-            <form action="#contact">
-                <input type="submit" value="Ajánlatkérés most!" class="button" />
-            </form>
-        </div>
-            </div>
+        <?php } ?>
+    </div>
 </section>
 
 <section id="clients" class="partners-section section-container">
-    <h2>Megbízható partnereink</h2>
+    <h2><?php echo $config['translations']['clients']['title']; ?></h2>
     <div class="partners-container box-container">
-                <div class="partner box partners-item box-item">
-            <a href="https://aceg.be/" target="_blank">
-                <img src="../images/logos/aceg_logo.png" alt="ACEG Logo">
-                <p><strong>ACEG</strong>: Minőségi és biztonsági szabványok biztosítása műszaki telepítésekhez és ellenőrzésekhez.</p>
+        <?php foreach ($config['translations']['clients']['partners'] as $partner) { ?>
+        <div class="partner box partners-item box-item">
+            <a href="<?php echo $partner['url']; ?>" target="_blank">
+                <img src="/public/images/logos/<?php echo $partner['key']; ?>_logo.png" alt="<?php echo $partner['name']; ?> Logo">
+                <p><strong><?php echo $partner['name']; ?></strong>: <?php echo $partner['description']; ?></p>
             </a>
         </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://corporate.kinepolis.com/en/about-kinepolis" target="_blank">
-                <img src="../images/logos/kinepolis_logo.png" alt="Kinepolis Logo">
-                <p><strong>Kinepolis</strong>: A mozi szórakoztatás és a filmélmények globális vezetője.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://www.techsoup.org/" target="_blank">
-                <img src="../images/logos/techsoup_logo.png" alt="TechSoup Logo">
-                <p><strong>TechSoup</strong>: Technológia és társadalmi haszon összekapcsolása.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://breadcreative.com/" target="_blank">
-                <img src="../images/logos/bread_logo.png" alt="Bread Creative Logo">
-                <p><strong>Bread Creative</strong>: Innovatív márkaépítés és dizájnmegoldások hatásos kommunikációhoz.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://companyapp.co.uk/communicator/" target="_blank">
-                <img src="../images/logos/companyapp_logo.png" alt="CompanyApp Logo">
-                <p><strong>CompanyApp</strong>: Digitális kommunikációs eszközök modern üzleti igényekhez.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://www.nuaxia.com/" target="_blank">
-                <img src="../images/logos/nuaxia_logo.png" alt="Nuaxia Logo">
-                <p><strong>Nuaxia</strong>: Életciklus stratégiák átalakítása akciótervekké.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://www.vodafone.com/" target="_blank">
-                <img src="../images/logos/vodafone_logo.png" alt="Vodafone Logo">
-                <p><strong>Vodafone</strong>: Globális távközlési óriás, amely a kapcsolattartást biztosítja.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://www.kockanarancs.hu/" target="_blank">
-                <img src="../images/logos/kocka_narancs_logo.png" alt="Kocka Narancs Logo">
-                <p><strong>Kocka Narancs</strong>: Az élet egyszerűsítése korszerű IT és kreatív megoldásokkal.</p>
-            </a>
-        </div>
-                <div class="partner box partners-item box-item">
-            <a href="https://columbiagames.com/" target="_blank">
-                <img src="../images/logos/columbia_games_logo.png" alt="Columbia Games Logo">
-                <p><strong>Columbia Games</strong>: Időtlen társasjátékok és RPG-k alkotása, amelyek inspirálnak és szórakoztatnak.</p>
-            </a>
-        </div>
-            </div>
+        <?php } ?>
+    </div>
 </section>
 
 <section id="contact">
-    <h2>Kapcsolat</h2>
-        <form method="POST" class="contact-form" action="/src/index.php?lang=hu&endpoint=validateForm&callback=%2Fsrc%2Findex.php/">
-                        <label class="required">Név</label>
+    <h2><?php echo $config['translations']['sections']['contact']['title']; ?></h2>
+    <?php
+        global $form_errors;
+        $formHandler = new ContactFormHandler();
+        $formUrl = $formHandler->getFormUrl();
+        $form_errors = $_POST['formErrors'] ?? [];
+    ?>
+    <form method="POST" class="contact-form" action="<?php echo $formUrl; ?>/">
+        <?php if (isset($form_errors['success'])) : ?>
+            <div class="form-success">
+                <?php print $form_errors['success']; ?>
+            </div>
+        <?php endif; ?>
+        <div class="form-error">
+            <ul>
+                <?php foreach ($form_errors as $fieldName => $error) : ?>
+                    <?php if ($fieldName !== 'lang') : ?>
+                        <li><?php echo $error; ?></li>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+        <label class="required"><?php echo $config['translations']['sections']['contact']['name']; ?></label>
         <input type="text"
-               placeholder="Név"
+               placeholder="<?php echo $config['translations']['sections']['contact']['name']; ?>"
                name="full_name"
                id="full_name"
-               value=""
+               value="<?php echo htmlspecialchars($_POST['full_name'] ?? ''); ?>"
                required>
-                <br />
+        <?php if (!empty($form_errors['full_name'])): ?>
+        <span class="form-error" data-field-name="full_name"><?php echo $form_errors['full_name']; ?></span>
+        <?php endif; ?>
+        <br />
 
-        <label class="required">Cégnév</label>
+        <label class="required"><?php echo $config['translations']['sections']['contact']['company']; ?></label>
         <input type="text"
-               placeholder="Cégnév"
+               placeholder="<?php echo $config['translations']['sections']['contact']['company']; ?>"
                name="company"
                id="company"
-               value=""
+               value="<?php echo htmlspecialchars($_POST['company'] ?? ''); ?>"
                required>
-                <br />
+        <?php if (!empty($form_errors['company'])): ?>
+        <span class="form-error" data-field-name="company"><?php echo $form_errors['company']; ?></span>
+        <?php endif; ?>
+        <br />
 
         <!-- Country Code and Phone Number -->
         <div class="phone-container">
-            <label class="required">Telefon</label>
+            <label class="required"><?php echo $config['translations']['sections']['contact']['phone']; ?></label>
             <select id="countryCode" name="countryCode">
                 <option data-flag="ab" value="ab (+7)">Abkhazia (+7)</option>
                 <option data-flag="af" value="af (+93)">Afghanistan (+93) 🇦🇫</option>
@@ -452,49 +355,56 @@
                 <option data-flag="za" value="za (+255)">Zanzibar (+255)</option>
                 <option data-flag="zi" value="zi (+263)">Zimbabwe (+263) 🇿🇼</option>
             </select>
-            
-            <label class="required">Telefon</label>
+            <?php if (!empty($form_errors['countryCode'])): ?>
+            <span class="form-error" data-field-name="countryCode"><?php echo $form_errors['countryCode']; ?></span>
+            <?php endif; ?>
+
+            <label class="required"><?php echo $config['translations']['sections']['contact']['phone']; ?></label>
             <input type="tel"
-                   placeholder="Telefon"
+                   placeholder="<?php echo $form_errors['phone'] ?? $config['translations']['sections']['contact']['phone']; ?>"
                    name="phone"
                    id="phone"
-                   value=""
+                   value="<?php echo htmlspecialchars($_POST['phone'] ?? ''); ?>"
                    required>
         </div>
-                <br />
+        <?php if (!empty($form_errors['phone'])): ?>
+        <span class="form-error" data-field-name="phone"><?php echo $form_errors['phone']; ?></span>
+        <?php endif; ?>
+        <br />
 
-        <label class="required">Email</label>
+        <label class="required"><?php echo $config['translations']['sections']['contact']['email']; ?></label>
         <input type="email"
-               placeholder="Email"
+               placeholder="<?php echo $config['translations']['sections']['contact']['email']; ?>"
                name="email"
                id="email"
-               value=""
+               value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>"
                required>
-                <br />
+        <?php if (!empty($form_errors['email'])): ?>
+        <span class="form-error" data-field-name="email"><?php echo $form_errors['email']; ?></span>
+        <?php endif; ?>
+        <br />
 
-        <label class="required">Üzenet</label>
+        <label class="required"><?php echo $config['translations']['sections']['contact']['message']; ?></label>
         <textarea name="message"
                   rows="15"
-                  placeholder="Üzenet"
+                  placeholder="<?php echo $config['translations']['sections']['contact']['message']; ?>"
                   id="message"
-                  required></textarea>
-                <br />
+                  required><?php echo htmlspecialchars($_POST['message'] ?? ''); ?></textarea>
+        <?php if (!empty($form_errors['message'])): ?>
+        <span class="form-error" data-field-name="message"><?php echo $form_errors['message']; ?></span>
+        <?php endif; ?>
+        <br />
 
         <!-- Google reCAPTCHA -->
-        <div class="g-recaptcha" data-sitekey="6Le6WrkqAAAAALgGL_nT-oO2X5icy2A6dvexOVId" data-hl="en"></div>
-                <br />
+        <div class="g-recaptcha" data-sitekey="<?php print $config['recaptcha_site_key'] ?>" data-hl="en"></div>
+        <?php if (!empty($form_errors['g-recaptcha-response'])): ?>
+        <span class="form-error" data-field-name="g-recaptcha-response"><?php echo $form_errors['g-recaptcha-response']; ?></span>
+        <?php endif; ?>
+        <br />
 
-        <input type="submit" value="Üzenet küldése">
-            </form>
+        <input type="submit" value="<?php echo $config['translations']['sections']['contact']['button']; ?>">
+        <?php if (!empty($successMessage)): ?>
+        <span class="form-success"><?php echo $successMessage; ?></span>
+        <?php endif; ?>
+    </form>
 </section>
-
-</main>
-<footer>
-    <p>© 2025 BeyondStart Solutions. Minden jog fenntartva.</p>
-</footer>
-<div id="log-container" class="log-container hidden">
-    <div id="log"></div>
-</div>
-<button id="toggle-log" class="toggle-log button">Toggle Logs</button>
-</body>
-</html>

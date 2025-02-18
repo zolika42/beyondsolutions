@@ -7,8 +7,8 @@ class MinifierClass
     public function __construct()
     {
         global $config;
-        $this->cssDirectory = rtrim(__DIR__ . '/../themes/' . $config['theme'] . '/css', '/');
-        $this->jsDirectory = rtrim(__DIR__ . '/../themes/' . $config['theme'] . '/js', '/');
+        $this->cssDirectory = rtrim('./themes/' . $config['theme'] . '/css', '/');
+        $this->jsDirectory = rtrim('./themes/' . $config['theme'] . '/js', '/');
     }
 
     /**
