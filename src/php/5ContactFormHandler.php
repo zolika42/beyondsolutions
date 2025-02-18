@@ -31,7 +31,7 @@ class ContactFormHandler
     public function getFormUrl(): string
     {
         global $languageClass;
-        $url = dirname($_SERVER['PHP_SELF']) . '/index.php';
+        $url = '/';
         $lang = $languageClass->getLanguage();
         $languageKey = $languageClass->getLanguageKey();
         $queryParams[$languageKey] = $lang;
