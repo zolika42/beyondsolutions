@@ -1,0 +1,69 @@
+# Deny access to all files and directories by default
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Allow access to the public folder only
+    RewriteCond %{REQUEST_URI} !^/public/ [NC]
+    RewriteRule ^ - [F,L]
+</IfModule>
+
+# Prevent direct access to sensitive files
+<FilesMatch "(^\.|config\.php|composer\.(json|lock)|autoload\.php|\.env)">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Deny access to the src/logs directory
+<Directory "/var/www/beyondsolutions/src/logs">
+    Order Allow,Deny
+    Deny from all
+</Directory>
+
+# Deny access to the src/php directory
+<Directory "/var/www/beyondsolutions/src/php">
+    Order Allow,Deny
+    Deny from all
+</Directory>
+
+# Allow access to the public directory
+<Directory "/var/www/beyondsolutions/public">
+    Order Allow,Deny
+    Allow from all
+</Directory>
+
+# Protect .htaccess itself
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Disable directory listing
+Options -Indexes
+
+# Prevent execution of PHP files in sensitive directories
+<Directory "/var/www/beyondsolutions/src/logs">
+    <Files "*.php">
+        Order Allow,Deny
+        Deny from all
+    </Files>
+</Directory>
+
+<Directory "/var/www/beyondsolutions/src/php">
+    <Files "*.php">
+        Order Allow,Deny
+        Deny from all
+    </Files>
+</Directory>
+
+# Protect JSON files (e.g., language files)
+<FilesMatch "\.json$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Protect all .log files
+<FilesMatch "\.log$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
