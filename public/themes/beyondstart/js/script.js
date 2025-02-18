@@ -293,13 +293,20 @@ function handleCaptchaError() {
  * @returns {TomSelect} - The initialized TomSelect instance.
  */
 function initTomSelect() {
+	const select = document.querySelector("#countryCode");
+	if (!select) return;
+	select.setAttribute("autocomplete", "tel-country-code"); // Ensure original select has autocomplete
 	return new TomSelect("#countryCode", {
 		create: false, // Disable creation of new items
 		maxItems: 1, // Single selection
 		allowEmptyOption: true, // Allow the field to be empty
 		placeholder: "Start typing...", // Placeholder text for the empty state
 		items: ["hu (+36)"],
-
+		onInitialize: function() {
+			// Set autocomplete attribute on the generated TomSelect input
+			this.control_input.setAttribute("autocomplete", "tel-country-code");
+		},
+		
 		onFocus: function () {
 			this.clear(); // Clear the selected value when the field gains focus
 		},
