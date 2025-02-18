@@ -20,7 +20,7 @@
     <div class="services-container box-container">
         <?php foreach ($config['translations']['services'] as $service_key => $service) { ?>
         <div class="service service-item box box-item">
-            <img src="/images/icons/<?php echo $service_key; ?>.png" alt="<?php echo $service['title']; ?> Icon">
+            <img loading="lazy" src="/images/icons/<?php echo $service_key; ?>.png" alt="<?php echo $service['title']; ?> Icon">
             <h3><?php echo $service['title']; ?></h3>
             <p><?php echo $service['description']; ?></p>
             <form action="#contact">
@@ -37,7 +37,7 @@
         <?php foreach ($config['translations']['clients']['partners'] as $partner) { ?>
         <div class="partner box partners-item box-item">
             <a href="<?php echo $partner['url']; ?>" target="_blank">
-                <img src="/images/logos/<?php echo $partner['key']; ?>_logo.png" alt="<?php echo $partner['name']; ?> Logo">
+                <img loading="lazy" src="/images/logos/<?php echo $partner['key']; ?>_logo.png" alt="<?php echo $partner['name']; ?> Logo">
                 <p><strong><?php echo $partner['name']; ?></strong>: <?php echo $partner['description']; ?></p>
             </a>
         </div>
