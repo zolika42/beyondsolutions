@@ -3,7 +3,7 @@
     --blue: #242B2E;
     --white: #F7F8F8;
     --greywhite: #f9f9f9;
-    --greybackground: #666;
+    --greybackground: #333;
     --red: red;
     --green: green;
     --bluetext: #242B2E;
@@ -12,11 +12,11 @@
     --gradient2: rgb(23, 26, 28);
     --gradient3: rgba(0, 0, 0, 1);
     --gradient-background: linear-gradient(90deg, var(--gradient1) 0%, var(--gradient2) 35%, var(--gradient3) 100%);
-    --boxshadow: rgba(0, 0, 0, 0.1);
+    --boxshadow: #f4f4f4;
     --microsoft-background: #1C1C1C;
     --microsoft-active-background: #0A0A0A;
     --header-background: #121617;
-    --userinfo-text-color: #227E82;
+    --userinfo-text-color: #14575a;
     --menu-background-color: #242B2E;
     --border-color: #48565B;
     --button-border-color: #DDE2E4;
