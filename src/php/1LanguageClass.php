@@ -34,6 +34,7 @@ class Language {
         $file = __DIR__ . "/../languages/$this->lang.json";
         if (!file_exists($file)) {
             $this->setDefaultLanguage();
+            $file = __DIR__ . "/../languages/$this->lang.json";
         }
         return json_decode(file_get_contents($file), true);
     }
@@ -43,4 +44,3 @@ $languageClass = new Language();
 global $config;
 $config['translations'] = $languageClass->loadLanguage();
 $config['siteLanguage'] = $languageClass->getLanguage();
-
