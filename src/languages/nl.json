@@ -1,0 +1,142 @@
+{
+  "header": {
+    "logo_alt": "BeyondStart Solutions Logo",
+    "menu": {
+      "about": "Over ons",
+      "services": "Diensten",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "welcome": "BeyondStart Solutions",
+    "description": "Innovatieve oplossingen voor een betere toekomst",
+    "button": "Aan de slag"
+  },
+  "sections": {
+    "portfolio": {
+      "title": "Ons portfolio",
+      "items": ["Project 1", "Project 2", "Project 3"]
+    },
+    "contact": {
+      "title": "Neem contact op",
+      "name": "Naam",
+      "company": "Bedrijf",
+      "phone": "Telefoon",
+      "email": "E-mail",
+      "message": "Bericht",
+      "button": "Verstuur bericht"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 BeyondStart Solutions. Alle rechten voorbehouden."
+  },
+  "email": {
+    "contact_email_title": "Contactformulier inzending",
+    "contact_email_name": "Volledige naam",
+    "contact_email_company": "Bedrijf",
+    "contact_email_country_code": "Landcode",
+    "contact_email_phone": "Telefoon",
+    "contact_email_email": "E-mail",
+    "contact_email_message": "Bericht",
+    "contact_email_success_message": "E-mail is verzonden! Bedankt voor uw bericht! We nemen zeer spoedig contact met u op!",
+    "validation": {
+      "full_name": "Volledige naam is verplicht.",
+      "company": "Bedrijf is verplicht.",
+      "countryCode": "Landcode is verplicht.",
+      "phone": "Een geldig telefoonnummer is verplicht. Alleen cijfers zijn toegestaan!",
+      "email1": "Ongeldig e-mailformaat.",
+      "email2": "Ongeldig e-maildomein. Er is geen MX-record gevonden.",
+      "email3": "Wegwerp-e-mailadressen zijn niet toegestaan.",
+      "message": "Het berichtveld is verplicht!",
+      "recaptcha": "reCAPTCHA verificatie mislukt!"
+    }
+  },
+  "services": {
+    "drupal_development": {
+      "title": "Drupal-ontwikkeling",
+      "description": "Heb je een oude of de nieuwste Drupal? Er is niets onmogelijk om te implementeren. Wij zijn gespecialiseerd in Drupal-ontwikkeling en bieden complete teams en projectmanagement.",
+      "button": "Vraag nu een offerte aan!"
+    },
+    "drupal_support": {
+      "title": "Drupal 7-ondersteuning na EOL",
+      "description": "Wij ondersteunen oude codebases in Drupal 7. Met decennia aan ervaring zorgt ons team ervoor dat uw systeem veilig en betrouwbaar blijft.",
+      "button": "Vraag nu een offerte aan!"
+    },
+    "project_management": {
+      "title": "Projectmanagement",
+      "description": "Wij bieden 360-graden projectmanagement, van planning tot levering, met ervaren projectmanagers, scrum masters en ontwikkelaars, en bieden complete teams en oplossingen.",
+      "button": "Vraag nu een offerte aan!"
+    },
+    "it_consultancy": {
+      "title": "IT-advies",
+      "description": "Loop je vast? Wij hechten waarde aan eerlijkheid en efficiëntie. Als wij niet de juiste oplossing zijn of als u iets anders nodig heeft, zeggen we dat direct zonder gedoe of tijdverspilling.",
+      "button": "Vraag nu een offerte aan!"
+    }
+  },
+  "clients": {
+    "title": "Onze vertrouwde partners",
+    "partners": [
+      {
+        "name": "ACEG",
+        "key": "aceg",
+        "description": "Waarborgen van kwaliteits- en veiligheidsnormen voor technische installaties en inspecties.",
+        "url": "https://aceg.be/"
+      },
+      {
+        "name": "Kinepolis",
+        "key": "kinepolis",
+        "description": "Een wereldleider in bioscoopentertainment en filmbelevingen.",
+        "url": "https://corporate.kinepolis.com/en/about-kinepolis"
+      },
+      {
+        "name": "TechSoup",
+        "key": "techsoup",
+        "description": "Overbruggen van de kloof tussen technologie en maatschappelijk welzijn.",
+        "url": "https://www.techsoup.org/"
+      },
+      {
+        "name": "Bread Creative",
+        "key": "bread",
+        "description": "Innovatieve branding- en ontwerpoplossingen voor impactvolle communicatie.",
+        "url": "https://breadcreative.com/"
+      },
+      {
+        "name": "CompanyApp",
+        "key": "companyapp",
+        "description": "Levering van digitale communicatietools op maat van moderne zakelijke behoeften.",
+        "url": "https://companyapp.co.uk/communicator/"
+      },
+      {
+        "name": "Nuaxia",
+        "key": "nuaxia",
+        "description": "Het omzetten van inzichten in uitvoerbare strategieën voor de life sciences-sector.",
+        "url": "https://www.nuaxia.com/"
+      },
+      {
+        "name": "Vodafone",
+        "key": "vodafone",
+        "description": "Een telecommunicatiereus die wereldwijde connectiviteit mogelijk maakt.",
+        "url": "https://www.vodafone.com/"
+      },
+      {
+        "name": "Kocka Narancs",
+        "key": "kocka_narancs",
+        "description": "Het leven vereenvoudigen met baanbrekende IT- en creatieve oplossingen.",
+        "url": "https://www.kockanarancs.hu/"
+      },
+      {
+        "name": "Columbia Games",
+        "key": "columbia_games",
+        "description": "Het creëren van tijdloze bordspellen en rollenspellen die inspireren en vermaken.",
+        "url": "https://columbiagames.com/"
+      }
+    ]
+  },
+  "about": {
+    "title": "Over ons",
+    "slogan": "Waar anderen opgeven, beginnen wij daar.",
+    "details": "Wij zijn gespecialiseerd in het aannemen van de moeilijkste klussen – taken die niemand anders wil of kan uitvoeren. Oude, legacy-systemen? Spaghetti-code? Slechte architectuur? Wij zijn uw oplossing. Met meer dan 20 jaar ervaring in programmeren, consultancy en projectmanagement bieden wij eerlijke meningen en bruikbare inzichten.",
+    "values": "Onze kernwaarden zijn eerlijkheid, professionele service en een zakelijke instelling gericht op het stimuleren van uw succes."
+  }
+}
